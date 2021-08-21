@@ -22,6 +22,10 @@ In the project directory, you can run:
     The page will reload if you make edits.\
     You will also see any lint errors in the console.
 
+- `yarn code:fix`
+
+  - 💅 Formats and lint the code according to the set rules
+
 - `yarn build`
 
   - 🏗️ Builds the app for production to the `build` folder.\
