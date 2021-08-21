@@ -74,5 +74,11 @@
 		"forceConsistentCasingInFileNames": true,		/* Disallow inconsistently-cased references to the same file. */
 		"resolveJsonModule": true 						/* Enabling the option allows importing JSON, and validating the types in that JSON file. */
 	},
-	"include": ["src"]
+	"ts-node": {
+		"compilerOptions": {
+			"module": "commonjs",						/* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext'. */
+			"isolatedModules": false 					/* Transpile each file as a separate module (similar to 'ts.transpileModule'). */
+		}
+	},
+	"include": ["src", "scripts"]
 }
