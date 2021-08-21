@@ -5,6 +5,7 @@
     "type": "git",
     "url": "https://github.com/out-fox-it/wedding"
   },
+  "license": "MIT",
   "private": true,
   "scripts": {
     "start": "react-scripts start",
