@@ -1,5 +1,22 @@
+/* VARIABLES FOR COLORS */
+$background-primary-color: #282c34;
+
+$text-primary-color: white;
+$text-secondary-color: gray;
+
+$decor-primary-color: #ec407a;
+$decor-secondary-color: #f9c001;
+
+/* VARIABLES FOR FONT-SIZE */
+$h1-font-size: 5rem;
+$h2-font-size: 4rem;
+$h3-font-size: 3rem;
+
 html {
 	box-sizing: border-box;
+
+	// Hack for easily read font sizing (now 1rem = 10px, 1.1rem = 11px and so on)!
+	font-size: 62.5%;
 }
 
 *,
@@ -15,10 +32,98 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 
+	font-size: 1.6rem;
+	color: $text-primary-color;
+
+	background-color: $background-primary-color;
 	margin: 0;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+
+	min-height: 100vh;
+	padding: 0 3rem;
 }
 
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 		monospace;
+}
+
+h1 {
+	font-size: $h1-font-size;
+
+	&::before {
+		content: '<';
+	}
+
+	&::after {
+		content: '>';
+	}
+
+	&:last-child {
+		&::before {
+			content: '</';
+			margin-right: 0.5rem;
+
+			// Font-size is reduced to overcome overflowing due to the ::before element!
+			font-size: $h2-font-size;
+		}
+	}
+}
+
+header {
+	text-align: center;
+}
+
+nav {
+	& > ul {
+		display: flex;
+		flex-flow: row wrap;
+		list-style-type: none;
+		margin: 2rem 0;
+		padding: 0;
+
+		&::before {
+			content: 'TODO:';
+			align-self: center;
+			font-style: italic;
+			color: $decor-primary-color;
+		}
+
+		&:last-child {
+			&::before {
+				content: 'DONE:';
+				align-self: center;
+				font-style: italic;
+				color: $decor-secondary-color;
+			}
+		}
+	}
+
+	& li {
+		margin: 1rem;
+
+		&:nth-child(odd) {
+			color: $text-secondary-color;
+		}
+	}
+
+	& a {
+		text-decoration: none;
+		color: inherit;
+	}
+}
+
+.content {
+	color: $decor-primary-color;
+
+	&::after {
+		content: '';
+		display: block;
+	}
 }
