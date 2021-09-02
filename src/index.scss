@@ -1,28 +1,50 @@
 /* VARIABLES FOR COLORS */
-$background-primary-color: #282c34;
+$background-primary-color: #222033;
 
 $text-primary-color: white;
 $text-secondary-color: gray;
 
 $decor-primary-color: #ec407a;
 $decor-secondary-color: #f9c001;
+$decor-tertiary-color: #5c2aa7;
 
 /* VARIABLES FOR FONT-SIZE */
+$default-font-size: 1.6rem;
+
 $h1-font-size: 5rem;
-$h2-font-size: 4rem;
-$h3-font-size: 3rem;
+$h2-font-size: 3.5rem;
+$h3-font-size: 2.5rem;
 
-html {
-	box-sizing: border-box;
+// MEDIA QUERIES VIA MIXINS
+@mixin phone-view {
+	@media (max-width: 480px) {
+		@content;
+	}
+}
 
-	// Hack for easily read font sizing (now 1rem = 10px, 1.1rem = 11px and so on)!
-	font-size: 62.5%;
+@mixin ipad-view {
+	@media (min-width: 481px) {
+		@content;
+	}
+}
+
+@mixin desktop-view {
+	@media (min-width: 769px) {
+		@content;
+	}
 }
 
 *,
 *::before,
 *::after {
 	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+
+	// Hack for easily read font sizing (now 1rem = 10px, 1.1rem = 11px and so on)!
+	font-size: 62.5%;
 }
 
 body {
@@ -32,7 +54,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 
-	font-size: 1.6rem;
+	font-size: $default-font-size;
 	color: $text-primary-color;
 
 	background-color: $background-primary-color;
@@ -52,6 +74,12 @@ main {
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 		monospace;
+}
+
+h1,
+h2,
+h3 {
+	text-align: center;
 }
 
 h1 {
@@ -85,7 +113,7 @@ nav {
 		display: flex;
 		flex-flow: row wrap;
 		list-style-type: none;
-		margin: 2rem 0;
+		margin: 1rem 0;
 		padding: 0;
 
 		&::before {
@@ -120,10 +148,94 @@ nav {
 }
 
 .content {
-	color: $decor-primary-color;
+	@include ipad-view {
+		width: 100%;
+	}
 
-	&::after {
-		content: '';
-		display: block;
+	@include desktop-view {
+		width: 60%;
+	}
+}
+
+form {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	position: relative;
+
+	& > input,
+	& > textarea {
+		height: 3.5rem;
+		padding: 0 3rem;
+		margin: 0.5rem;
+
+		background-color: $background-primary-color;
+		border: 1px solid $decor-primary-color;
+		color: $text-primary-color;
+
+		@include ipad-view {
+			width: 70%;
+		}
+
+		@include desktop-view {
+			width: 60%;
+		}
+
+		&::placeholder {
+			color: $decor-secondary-color;
+			opacity: 1;
+		}
+
+		// STARS ON ACTIVE AND FOCUS ANIMATION
+		& + span::before {
+			content: '*';
+			font-size: $h2-font-size;
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			@include desktop-view {
+				margin-left: 5rem;
+			}
+		}
+
+		& + span::after {
+			content: '*';
+			font-size: $h2-font-size;
+			position: absolute;
+			top: 0;
+			right: 0;
+
+			@include desktop-view {
+				margin-right: 5rem;
+			}
+		}
+	}
+
+	& > input:nth-last-child(2) {
+		margin-top: 2.5rem;
+	}
+
+	& > textarea {
+		height: 10rem;
+		padding: 1rem 3rem;
+		font-size: $default-font-size;
+	}
+}
+
+.button {
+	background-color: $decor-primary-color;
+	color: $text-primary-color;
+
+	@keyframes letters {
+		100% {
+			letter-spacing: 0.5rem;
+		}
+	}
+
+	&:hover {
+		background-color: $decor-tertiary-color;
+		border: 1px solid $decor-tertiary-color;
+		animation: letters 2s ease-in-out;
 	}
 }
