@@ -12,6 +12,7 @@ export const App: React.FC = () => {
 				<h1>{pageTitle}</h1>
 				<img src={logo} className="header__logo" alt="logo" />
 			</header>
+
 			<nav>
 				{/* TODO */}
 				<ul>
@@ -42,9 +43,82 @@ export const App: React.FC = () => {
 					<li>BASIC SET-UP AND DESIGN LOL</li>
 				</ul>
 			</nav>
+
 			<section className="content">
-				<p>~ PAGE CONTENT ~</p>
+				<h2>PAGE CONTENT</h2>
+
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. A minus, nam
+					dolor doloremque quos, possimus eaque odio non saepe impedit vero esse
+					beatae nisi vitae veritatis eum dolores quaerat eos. Illo molestiae ut
+					ipsa, sit accusamus numquam. Libero repellat architecto praesentium
+					quisquam delectus pariatur vitae sequi minima mollitia? Optio, omnis?
+					Autem molestias maxime corrupti eius illum labore tempora consectetur
+					quisquam. Aliquid totam quidem a, iure in nihil pariatur voluptatem
+					aspernatur atque tempore nostrum vitae sapiente unde dolores
+					voluptatibus autem ea suscipit porro fuga architecto voluptate esse!
+					Minima, quasi ipsum. Culpa.
+				</p>
+
+				<h2>SOME HEADLINE</h2>
+
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. A minus, nam
+					dolor doloremque quos, possimus eaque odio non saepe impedit vero esse
+					beatae nisi vitae veritatis eum dolores quaerat eos. Illo molestiae ut
+					ipsa, sit accusamus numquam. Libero repellat architecto praesentium
+					quisquam delectus pariatur vitae sequi minima mollitia? Optio, omnis?
+					Autem molestias maxime corrupti eius illum labore tempora consectetur
+					quisquam. Aliquid totam quidem a, iure in nihil pariatur voluptatem
+					aspernatur atque tempore nostrum vitae sapiente unde dolores
+					voluptatibus autem ea suscipit porro fuga architecto voluptate esse!
+					Minima, quasi ipsum. Culpa.
+				</p>
+
+				{/* INPUT DESIGN TEMPLATE */}
+				{/* Empty <span> is a hack for adding pseudoelements to input! */}
+				<form>
+					<input type="text" placeholder="NAME:" />
+					<span></span>
+					<input type="text" placeholder="PASSWORD:" />
+					<span></span>
+					<input type="text" placeholder="SOMETHING:" />
+					<span></span>
+					<textarea placeholder="LONG ANSWER:" />
+					<span></span>
+					<input type="text" placeholder="SHORT ANSWER:" />
+					<span></span>
+					<input className="button" type="button" value="SUBMIT" />
+					<span></span>
+				</form>
+
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. A minus, nam
+					dolor doloremque quos, possimus eaque odio non saepe impedit vero esse
+					beatae nisi vitae veritatis eum dolores quaerat eos. Illo molestiae ut
+					ipsa, sit accusamus numquam. Libero repellat architecto praesentium
+					quisquam delectus pariatur vitae sequi minima mollitia? Optio, omnis?
+					Autem molestias maxime corrupti eius illum labore tempora consectetur
+					quisquam. Aliquid totam quidem a, iure in nihil pariatur voluptatem
+					aspernatur atque tempore nostrum vitae sapiente unde dolores
+					voluptatibus autem ea suscipit porro fuga architecto voluptate esse!
+					Minima, quasi ipsum. Culpa.
+				</p>
+
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. A minus, nam
+					dolor doloremque quos, possimus eaque odio non saepe impedit vero esse
+					beatae nisi vitae veritatis eum dolores quaerat eos. Illo molestiae ut
+					ipsa, sit accusamus numquam. Libero repellat architecto praesentium
+					quisquam delectus pariatur vitae sequi minima mollitia? Optio, omnis?
+					Autem molestias maxime corrupti eius illum labore tempora consectetur
+					quisquam. Aliquid totam quidem a, iure in nihil pariatur voluptatem
+					aspernatur atque tempore nostrum vitae sapiente unde dolores
+					voluptatibus autem ea suscipit porro fuga architecto voluptate esse!
+					Minima, quasi ipsum. Culpa.
+				</p>
 			</section>
+
 			<footer>
 				<h1>{pageTitle}</h1>
 			</footer>
