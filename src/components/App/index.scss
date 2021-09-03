@@ -19,3 +19,25 @@ header {
 		}
 	}
 }
+
+.wedding {
+	font-size: $h1-font-size;
+	font-weight: bold;
+
+	margin: 3rem 0;
+
+	&::before {
+		content: '<';
+	}
+
+	&::after {
+		content: '>';
+	}
+
+	&:last-child {
+		&::before {
+			content: '</';
+			margin-right: 0.5rem;
+		}
+	}
+}

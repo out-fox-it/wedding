@@ -48,28 +48,6 @@ h3 {
 	text-align: center;
 }
 
-h1 {
-	font-size: $h1-font-size;
-
-	&::before {
-		content: '<';
-	}
-
-	&::after {
-		content: '>';
-	}
-
-	&:last-child {
-		&::before {
-			content: '</';
-			margin-right: 0.5rem;
-
-			// Font-size is reduced to overcome overflowing due to the ::before element!
-			font-size: $h2-font-size;
-		}
-	}
-}
-
 header {
 	text-align: center;
 }
