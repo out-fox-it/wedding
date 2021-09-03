@@ -1,0 +1,35 @@
+/* VARIABLES FOR COLORS */
+$background-primary-color: #222033;
+
+$text-primary-color: white;
+$text-secondary-color: gray;
+
+$decor-primary-color: #ec407a;
+$decor-secondary-color: #f9c001;
+$decor-tertiary-color: #5c2aa7;
+
+/* VARIABLES FOR FONT-SIZE */
+$default-font-size: 1.6rem;
+
+$h1-font-size: 5rem;
+$h2-font-size: 3.5rem;
+$h3-font-size: 2.5rem;
+
+// MEDIA QUERIES VIA MIXINS
+@mixin phone-view {
+	@media (max-width: 30em) {
+		@content;
+	}
+}
+
+@mixin ipad-view {
+	@media (min-width: 30.5em) {
+		@content;
+	}
+}
+
+@mixin desktop-view {
+	@media (min-width: 60em) {
+		@content;
+	}
+}
