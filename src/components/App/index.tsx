@@ -9,7 +9,7 @@ export const App: React.FC = () => {
 	return (
 		<>
 			<header>
-				<h1>{pageTitle}</h1>
+				<h1 className="wedding">{pageTitle}</h1>
 				<img src={logo} className="header__logo" alt="logo" />
 			</header>
 
@@ -120,7 +120,7 @@ export const App: React.FC = () => {
 			</section>
 
 			<footer>
-				<h1>{pageTitle}</h1>
+				<div className="wedding">{pageTitle}</div>
 			</footer>
 		</>
 	)
