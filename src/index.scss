@@ -42,6 +42,11 @@ code {
 		monospace;
 }
 
+input,
+textarea {
+	font-family: inherit;
+}
+
 h1,
 h2,
 h3 {
@@ -109,7 +114,8 @@ form {
 
 	& > input,
 	& > textarea {
-		height: 3.5rem;
+		width: 100%;
+		min-height: 3.5rem;
 		padding: 0 3rem;
 		margin: 0.5rem;
 
@@ -161,15 +167,16 @@ form {
 	}
 
 	& > textarea {
-		height: 10rem;
+		resize: none;
+		min-height: 10rem;
 		padding: 1rem 3rem;
-		font-size: $default-font-size;
 	}
 }
 
 .button {
 	background-color: $decor-primary-color;
 	color: $text-primary-color;
+	cursor: pointer;
 
 	@keyframes letters {
 		100% {
