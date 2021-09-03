@@ -110,18 +110,52 @@ form {
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
-	position: relative;
 
-	& > input,
-	& > textarea {
+	& > label {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+
+		@keyframes rotating-stars {
+			to {
+				transform: rotate(360deg);
+			}
+		}
+
+		// STARS FOCUS ANIMATION
+		&:focus-within::before,
+		&:focus-within::after {
+			content: '*';
+			font-size: $h2-font-size;
+			line-height: 0;
+			padding-top: 1rem;
+			animation: rotating-stars 1s ease-in-out infinite alternate;
+		}
+
+		&:focus-within::before {
+			margin-right: 1rem;
+		}
+
+		&:focus-within::after {
+			margin-left: 1rem;
+		}
+	}
+
+	& input,
+	& textarea {
 		width: 100%;
 		min-height: 3.5rem;
 		padding: 0 3rem;
-		margin: 0.5rem;
+		margin: 0.5rem 0;
 
 		background-color: $background-primary-color;
 		border: 1px solid $decor-primary-color;
 		color: $text-primary-color;
+
+		@include phone-view {
+			width: 80%;
+		}
 
 		@include ipad-view {
 			width: 70%;
@@ -135,38 +169,9 @@ form {
 			color: $decor-secondary-color;
 			opacity: 1;
 		}
-
-		// STARS ON ACTIVE AND FOCUS ANIMATION
-		& + span::before {
-			content: '*';
-			font-size: $h2-font-size;
-			position: absolute;
-			top: 0;
-			left: 0;
-
-			@include desktop-view {
-				margin-left: 5rem;
-			}
-		}
-
-		& + span::after {
-			content: '*';
-			font-size: $h2-font-size;
-			position: absolute;
-			top: 0;
-			right: 0;
-
-			@include desktop-view {
-				margin-right: 5rem;
-			}
-		}
 	}
 
-	& > input:nth-last-child(2) {
-		margin-top: 2.5rem;
-	}
-
-	& > textarea {
+	& textarea {
 		resize: none;
 		min-height: 10rem;
 		padding: 1rem 3rem;
@@ -177,16 +182,13 @@ form {
 	background-color: $decor-primary-color;
 	color: $text-primary-color;
 	cursor: pointer;
+	font-weight: 500;
+	transition: letter-spacing 1s ease-in-out;
 
-	@keyframes letters {
-		100% {
-			letter-spacing: 0.5rem;
-		}
-	}
-
-	&:hover {
+	&:hover,
+	&:focus {
 		background-color: $decor-tertiary-color;
 		border: 1px solid $decor-tertiary-color;
-		animation: letters 2s ease-in-out;
+		letter-spacing: 0.5rem;
 	}
 }
