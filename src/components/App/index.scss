@@ -1,6 +1,10 @@
 @import 'src/theme';
 
 header {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+
 	text-align: center;
 
 	width: 100vw;
@@ -17,6 +21,12 @@ header {
 		border-width: 0.5rem 0;
 		border-style: solid;
 		border-color: $decor-primary-color;
+
+		@include desktop-view {
+			grid-column: 1;
+			grid-row-start: 3;
+			grid-row-end: 6;
+		}
 	}
 
 	// TODO: It's nice and all but it would be nicer if the video covered full original picture.
@@ -48,7 +58,11 @@ header {
 			margin-top: 0;
 		}
 
-		@include ipad-view {
+		@include desktop-view {
+			grid-column: 1;
+			grid-row-start: 2;
+			grid-row-end: 4;
+
 			flex-direction: row;
 			justify-content: space-evenly;
 			align-items: stretch;
@@ -70,18 +84,41 @@ header {
 
 			@include phone-view {
 				width: 80%;
-				margin: 4rem 0;
+				margin-bottom: 3rem;
+
+				&:first-child {
+					margin-bottom: 7rem;
+				}
+
+				&:last-child {
+					margin-bottom: 4.5rem;
+				}
 			}
 
 			@include ipad-view {
 				width: 80%;
-				margin: 4rem 1rem;
+				margin-bottom: 3rem;
+
+				&:first-child {
+					margin-bottom: 7rem;
+				}
+
+				&:last-child {
+					margin-bottom: 4.5rem;
+				}
 			}
 
 			@include desktop-view {
 				width: 25%;
-				// TODO: Always move up by 50% of article height
-				margin-bottom: -10%;
+				margin-top: 3rem;
+
+				&:first-child {
+					margin-bottom: 3rem;
+				}
+
+				&:last-child {
+					margin-bottom: 3rem;
+				}
 			}
 
 			&:first-child,
