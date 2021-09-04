@@ -55,6 +55,7 @@ header {
 		}
 
 		& > .container__content {
+			position: relative;
 			display: flex;
 			flex-flow: column wrap;
 			justify-content: center;
@@ -90,7 +91,7 @@ header {
 
 			// STYLES FOR TEXT INSIDE THE CONTAINERS
 			& > h3 {
-				margin-top: 0;
+				margin-top: 2.5rem;
 			}
 
 			& > .container__links {
@@ -151,9 +152,13 @@ header {
 			width: 13rem;
 			height: 13rem;
 			border-radius: 50%;
-			margin: 0 auto;
-			// TODO: Always move up by 50% of .container__icon height!
-			margin-top: -10rem;
+
+			position: absolute;
+			top: -7rem;
+			right: 0;
+			left: 0;
+			margin-left: auto;
+			margin-right: auto;
 
 			@media (prefers-reduced-motion: no-preference) {
 				@keyframes App-logo-spin {
