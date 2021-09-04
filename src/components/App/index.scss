@@ -7,8 +7,7 @@ header {
 	max-width: 100%; // Otherwise 100vw causes horizontal scrollbar.
 
 	& .header__logo {
-		// TODO: Compress background-image and change format to optimise!
-		background-image: url(../../assets/header.jpg);
+		background-image: url(../../assets/header.webp);
 		background-position: bottom;
 		background-repeat: no-repeat;
 
