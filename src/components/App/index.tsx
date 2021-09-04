@@ -1,16 +1,52 @@
 import React from 'react'
-
-import logo from './logo.svg'
 import './index.scss'
+
+// TODO: Nonesense TS error. Maybe add type?
+import headerOnHover from '../../assets/headerOnHover.webm'
 
 export const App: React.FC = () => {
 	const pageTitle = 'WeddinG'
+	const date = "XX. XX. 2022"
+	const address = ['Šárovcova 1206', 'Třebechovice pod Orebem', '503 46']
 
 	return (
 		<>
 			<header>
 				<h1 className="wedding">{pageTitle}</h1>
-				<img src={logo} className="header__logo" alt="logo" />
+				<section className="header__containers">
+					<article className="container__content">
+						<h3>WHERE?</h3>
+						<span className="address italic-text">{address[0]}</span>
+						<span className="address italic-text">{address[1]}</span>
+						<span className="address italic-text">{address[2]}</span>
+
+						{/* TODO: Add links content! */}
+						<div className="container__links">
+							| <a href="#">MAP</a> | <a href="#">PARKING</a> |{' '}
+							<a href="#">HOTELS</a> |
+						</div>
+					</article>
+					<article className="container__content">
+						<div className="container__icon"></div>
+						<h3>WE&#39;RE GETTING MARRIED!</h3>
+						<span className="date">{date}</span>
+					</article>
+					<article className="container__content">
+						<span className="italic-text">
+							TO CONFIRM YOU&#39;LL ATTEND, PLEASE FILL IN THE FORM
+						</span>
+
+						<div className="button">NEW GUEST</div>
+						<div className="button button__login">
+							<span className="button__text">LOG IN</span>
+						</div>
+					</article>
+				</section>
+				<section className="header__logo">
+					<video autoPlay muted loop className="header-on-hover">
+						<source src={headerOnHover} type="video/webm" />
+					</video>
+				</section>
 			</header>
 
 			<nav>
@@ -32,10 +68,25 @@ export const App: React.FC = () => {
 						<a href="#">ADMIN PAGE</a>
 					</li>
 					<li>
+						<a href="#">PASSWORD ACCESS</a>
+					</li>
+					<li>
 						<a href="#">BUDGET FEATURE</a>
 					</li>
 					<li>
 						<a href="#">FIREBASE</a>
+					</li>
+					<li>
+						<a href="#">CZ / ENG TEXTS</a>
+					</li>
+					<li>
+						<a href="#">PLANNING PAGE</a>
+					</li>
+					<li>
+						<a href="#">MAP, PARKING, HOTELS</a>
+					</li>
+					<li>
+						<a href="#">MORE PHOTOS</a>
 					</li>
 				</ul>
 				{/* DONE */}

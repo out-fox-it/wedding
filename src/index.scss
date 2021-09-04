@@ -34,7 +34,6 @@ main {
 	justify-content: space-between;
 
 	min-height: 100vh;
-	padding: 0 3rem;
 }
 
 code {
@@ -53,14 +52,27 @@ h3 {
 	text-align: center;
 }
 
-header {
-	text-align: center;
+a {
+	font-weight: bold;
+	color: $decor-tertiary-color;
+	text-decoration: none;
+
+	&:hover {
+		color: $decor-primary-color;
+	}
+}
+
+.italic-text {
+	font-style: italic;
 }
 
 nav {
+	width: 80%;
+
 	& > ul {
 		display: flex;
 		flex-flow: row wrap;
+		justify-content: center;
 		list-style-type: none;
 		margin: 1rem 0;
 		padding: 0;
@@ -97,6 +109,10 @@ nav {
 }
 
 .content {
+	display: flex;
+    flex-flow: column;
+	padding: 0 3rem;
+	
 	@include ipad-view {
 		width: 100%;
 	}
@@ -179,10 +195,16 @@ form {
 }
 
 .button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	height: 3.5rem;
 	background-color: $decor-primary-color;
 	color: $text-primary-color;
-	cursor: pointer;
 	font-weight: 500;
+
+	cursor: pointer;
 	transition: letter-spacing 1s ease-in-out;
 
 	&:hover,
