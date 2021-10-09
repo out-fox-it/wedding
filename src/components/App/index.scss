@@ -22,24 +22,14 @@ header {
 		border-style: solid;
 		border-color: $decor-primary-color;
 
+		&:hover {
+			background-image: url(../../assets/headerOnHover.gif);
+		}
+
 		@include desktop-view {
 			grid-column: 1;
 			grid-row-start: 3;
 			grid-row-end: 6;
-		}
-	}
-
-	// TODO: It's nice and all but it would be nicer if the video covered full original picture.
-	// TODO: It might be cool if it woudln't happen on :hover but randomly just for a few seconds.
-	& .header-on-hover {
-		opacity: 0;
-		width: 100%;
-		height: 100%;
-		transition: opacity 1s ease-in-out;
-		z-index: -1;
-
-		&:hover {
-			opacity: 1;
 		}
 	}
 

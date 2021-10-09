@@ -1,9 +1,6 @@
 import React from 'react'
 import './index.scss'
 
-// TODO: Nonesense TS error. Maybe add type?
-import headerOnHover from '../../assets/headerOnHover.webm'
-
 export const App: React.FC = () => {
 	const pageTitle = 'WeddinG'
 	const date = "XX. XX. 2022"
@@ -42,11 +39,7 @@ export const App: React.FC = () => {
 						</div>
 					</article>
 				</section>
-				<section className="header__logo">
-					<video autoPlay muted loop className="header-on-hover">
-						<source src={headerOnHover} type="video/webm" />
-					</video>
-				</section>
+				<section className="header__logo"></section>
 			</header>
 
 			<nav>
