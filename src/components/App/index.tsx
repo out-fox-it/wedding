@@ -1,9 +1,10 @@
 import React from 'react'
+
 import './index.scss'
 
 export const App: React.FC = () => {
 	const pageTitle = 'WeddinG'
-	const date = "XX. XX. 2022"
+	const date = 'XX. XX. 2022'
 	const address = ['Šárovcova 1206', 'Třebechovice pod Orebem', '503 46']
 
 	return (
@@ -18,16 +19,19 @@ export const App: React.FC = () => {
 						<span className="address italic-text">{address[2]}</span>
 
 						{/* TODO: Add links content! */}
+						{/* TODO: Switch | to borders */}
 						<div className="container__links">
 							| <a href="#">MAP</a> | <a href="#">PARKING</a> |{' '}
 							<a href="#">HOTELS</a> |
 						</div>
 					</article>
+
 					<article className="container__content">
 						<div className="container__icon"></div>
 						<h3>WE&#39;RE GETTING MARRIED!</h3>
 						<span className="date">{date}</span>
 					</article>
+
 					<article className="container__content">
 						<span className="italic-text">
 							TO CONFIRM YOU&#39;LL ATTEND, PLEASE FILL IN THE FORM

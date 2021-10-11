@@ -53,9 +53,9 @@ h3 {
 }
 
 a {
+	text-decoration: none;
 	font-weight: bold;
 	color: $decor-tertiary-color;
-	text-decoration: none;
 
 	&:hover {
 		color: $decor-primary-color;
@@ -110,9 +110,9 @@ nav {
 
 .content {
 	display: flex;
-    flex-flow: column;
+	flex-flow: column;
 	padding: 0 3rem;
-	
+
 	@include ipad-view {
 		width: 100%;
 	}
