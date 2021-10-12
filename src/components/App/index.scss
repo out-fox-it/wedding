@@ -120,11 +120,37 @@ header {
 
 			// STYLES FOR TEXT INSIDE THE CONTAINERS
 			& > h3 {
-				margin-top: 2.5rem;
+				margin-top: 2.5rem; // Middle h3 needs an extra margin due to an icon on top!
+
+				&:first-child {
+					margin-top: 0;
+				}
 			}
 
 			& > .container__links {
-				margin-top: 1rem;
+				display: flex;
+				align-self: center;
+				padding-top: 1.5rem;
+
+				@include phone-view {
+					flex-direction: column;
+				}
+				
+				& > a {
+					border-width: 0 0 0 0.2rem;
+					border-style: solid;
+					border-color: $text-primary-color;
+					padding: 0 1rem;
+
+					&:last-child {
+						border-width: 0 0.2rem 0 0.2rem;
+					}
+
+					@include phone-view {
+						border: none;
+						margin: 0.3rem 0;
+					}
+				}
 			}
 
 			& > .date {
@@ -210,6 +236,10 @@ header {
 	font-weight: bold;
 
 	margin: 3rem 0;
+
+	@include phone-view {
+		font-size: $h2-font-size;
+	}
 
 	&::before {
 		content: '<';

@@ -19,10 +19,10 @@ export const App: React.FC = () => {
 						<span className="address italic-text">{address[2]}</span>
 
 						{/* TODO: Add links content! */}
-						{/* TODO: Switch | to borders */}
 						<div className="container__links">
-							| <a href="#">MAP</a> | <a href="#">PARKING</a> |{' '}
-							<a href="#">HOTELS</a> |
+							<a href="#">MAP</a>
+							<a href="#">PARKING</a>
+							<a href="#">HOTELS</a>
 						</div>
 					</article>
 
@@ -45,52 +45,6 @@ export const App: React.FC = () => {
 				</section>
 				<section className="header__logo"></section>
 			</header>
-
-			<nav>
-				{/* TODO */}
-				<ul>
-					<li>
-						<a href="#">WEDDING DATE</a>
-					</li>
-					<li>
-						<a href="#">GUEST FORM</a>
-					</li>
-					<li>
-						<a href="#">GUEST LIST</a>
-					</li>
-					<li>
-						<a href="#">SONG LIST</a>
-					</li>
-					<li>
-						<a href="#">ADMIN PAGE</a>
-					</li>
-					<li>
-						<a href="#">PASSWORD ACCESS</a>
-					</li>
-					<li>
-						<a href="#">BUDGET FEATURE</a>
-					</li>
-					<li>
-						<a href="#">FIREBASE</a>
-					</li>
-					<li>
-						<a href="#">CZ / ENG TEXTS</a>
-					</li>
-					<li>
-						<a href="#">PLANNING PAGE</a>
-					</li>
-					<li>
-						<a href="#">MAP, PARKING, HOTELS</a>
-					</li>
-					<li>
-						<a href="#">MORE PHOTOS</a>
-					</li>
-				</ul>
-				{/* DONE */}
-				<ul>
-					<li>BASIC SET-UP AND DESIGN LOL</li>
-				</ul>
-			</nav>
 
 			<section className="content">
 				<h2>PAGE CONTENT</h2>

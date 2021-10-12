@@ -66,48 +66,6 @@ a {
 	font-style: italic;
 }
 
-nav {
-	width: 80%;
-
-	& > ul {
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: center;
-		list-style-type: none;
-		margin: 1rem 0;
-		padding: 0;
-
-		&::before {
-			content: 'TODO:';
-			align-self: center;
-			font-style: italic;
-			color: $decor-primary-color;
-		}
-
-		&:last-child {
-			&::before {
-				content: 'DONE:';
-				align-self: center;
-				font-style: italic;
-				color: $decor-secondary-color;
-			}
-		}
-	}
-
-	& li {
-		margin: 1rem;
-
-		&:nth-child(odd) {
-			color: $text-secondary-color;
-		}
-	}
-
-	& a {
-		text-decoration: none;
-		color: inherit;
-	}
-}
-
 .content {
 	display: flex;
 	flex-flow: column;
