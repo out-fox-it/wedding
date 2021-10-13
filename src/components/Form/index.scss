@@ -1,0 +1,73 @@
+@import '../../themes/theme.scss';
+
+form {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+
+	& > label {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+
+		@keyframes rotating-stars {
+			to {
+				transform: rotate(360deg);
+			}
+		}
+
+		// STARS FOCUS ANIMATION
+		&:focus-within::before,
+		&:focus-within::after {
+			content: '*';
+			font-size: $h2-font-size;
+			line-height: 0;
+			padding-top: 1rem;
+			animation: rotating-stars 1s ease-in-out infinite alternate;
+		}
+
+		&:focus-within::before {
+			margin-right: 1rem;
+		}
+
+		&:focus-within::after {
+			margin-left: 1rem;
+		}
+	}
+
+	& input,
+	& textarea {
+		width: 100%;
+		min-height: 3.5rem;
+		padding: 0 3rem;
+		margin: 0.5rem 0;
+
+		background-color: $background-primary-color;
+		border: 1px solid $decor-primary-color;
+		color: $text-primary-color;
+
+		@include phone-view {
+			width: 80%;
+		}
+
+		@include ipad-view {
+			width: 70%;
+		}
+
+		@include desktop-view {
+			width: 60%;
+		}
+
+		&::placeholder {
+			color: $decor-secondary-color;
+			opacity: 1;
+		}
+	}
+
+	& textarea {
+		resize: none;
+		min-height: 10rem;
+		padding: 1rem 3rem;
+	}
+}

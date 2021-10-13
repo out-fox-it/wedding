@@ -1,258 +1,102 @@
-@import 'src/theme';
+@import '../../themes/theme.scss';
 
-header {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: auto;
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
 
+html {
+	box-sizing: border-box;
+
+	// Hack for easily read font sizing (now 1rem = 10px, 1.1rem = 11px and so on)!
+	font-size: 62.5%;
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	font-size: $default-font-size;
+	color: $text-primary-color;
+
+	background-color: $background-primary-color;
+	margin: 0;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+
+	min-height: 100vh;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+input,
+textarea {
+	font-family: inherit;
+}
+
+h1,
+h2,
+h3 {
 	text-align: center;
+}
 
-	width: 100vw;
-	max-width: 100%; // Otherwise 100vw causes horizontal scrollbar.
+a {
+	text-decoration: none;
+	font-weight: bold;
+	color: $decor-tertiary-color;
 
-	& .header__logo {
-		background-image: url('../../assets/header.webp');
-		background-position: bottom;
-		background-repeat: no-repeat;
-
-		background-size: cover;
-		height: calc(100vw * 0.55);
-
-		border-width: 0.5rem 0;
-		border-style: solid;
-		border-color: $decor-primary-color;
-
-		&:hover {
-			// TODO: Too big image size!
-			// TODO: Backup and remove unused .mp4 file
-			background-image: url('../../assets/headerOnHover.gif');
-		}
-
-		@include desktop-view {
-			grid-column: 1;
-			grid-row-start: 3;
-			grid-row-end: 6;
-		}
-	}
-
-	& .header__containers {
-		display: flex;
-
-		@include phone-view {
-			flex-direction: column;
-			align-items: center;
-			margin-top: 0;
-		}
-
-		@include ipad-view {
-			flex-direction: column;
-			align-items: center;
-			margin-top: 0;
-		}
-
-		@include desktop-view {
-			grid-column: 1;
-			grid-row-start: 2;
-			grid-row-end: 4;
-
-			flex-direction: row;
-			justify-content: space-evenly;
-			align-items: stretch;
-		}
-
-		& > .container__content {
-			position: relative;
-			display: flex;
-			flex-flow: column wrap;
-			justify-content: center;
-			align-items: stretch;
-			z-index: 1;
-
-			background-color: $background-primary-color;
-			padding: 3rem;
-			border: 0.5rem solid $decor-primary-color;
-
-			text-transform: uppercase;
-
-			@include phone-view {
-				width: 80%;
-				margin-bottom: 3rem;
-
-				&:first-child {
-					margin-bottom: 7rem;
-				}
-
-				&:last-child {
-					margin-bottom: 4.5rem;
-				}
-			}
-
-			@include ipad-view {
-				width: 80%;
-				margin-bottom: 3rem;
-
-				&:first-child {
-					margin-bottom: 7rem;
-				}
-
-				&:last-child {
-					margin-bottom: 4.5rem;
-				}
-			}
-
-			@include desktop-view {
-				width: 25%;
-				margin-top: 3rem;
-
-				&:first-child {
-					margin-bottom: 3rem;
-				}
-
-				&:last-child {
-					margin-bottom: 3rem;
-				}
-			}
-
-			&:first-child,
-			&:last-child {
-				border-color: $decor-tertiary-color;
-			}
-
-			// STYLES FOR TEXT INSIDE THE CONTAINERS
-			& > h3 {
-				margin-top: 2.5rem; // Middle h3 needs an extra margin due to an icon on top!
-
-				&:first-child {
-					margin-top: 0;
-				}
-			}
-
-			& > .container__links {
-				display: flex;
-				align-self: center;
-				padding-top: 1.5rem;
-
-				@include phone-view {
-					flex-direction: column;
-				}
-				
-				& > a {
-					border-width: 0 0 0 0.2rem;
-					border-style: solid;
-					border-color: $text-primary-color;
-					padding: 0 1rem;
-
-					&:last-child {
-						border-width: 0 0.2rem 0 0.2rem;
-					}
-
-					@include phone-view {
-						border: none;
-						margin: 0.3rem 0;
-					}
-				}
-			}
-
-			& > .date {
-				font-size: $h2-font-size;
-				transform: scaleY(1.3);
-				color: $decor-secondary-color;
-			}
-
-			& > .button {
-				margin-top: 2rem;
-
-				&::before {
-					content: '*';
-					font-size: $h4-font-size;
-					line-height: 0;
-					padding-top: 0.5rem;
-					margin-right: 0.5rem;
-				}
-
-				&::after {
-					content: '*';
-					font-size: $h4-font-size;
-					line-height: 0;
-					padding-top: 0.5rem;
-					margin-left: 0.5rem;
-				}
-			}
-
-			& > .button__login {
-				position: relative;
-
-				& > .button__text {
-					position: relative;
-				}
-
-				&:hover {
-					background-image: repeating-linear-gradient(
-						-45deg,
-						transparent,
-						transparent 2rem,
-						$decor-primary-color 2rem,
-						$decor-primary-color 4rem
-					);
-				}
-			}
-		}
-
-		& .container__icon {
-			background-color: $background-primary-color;
-			background-image: url('../../assets/logo.svg');
-			background-position: center;
-			background-repeat: no-repeat;
-
-			width: 13rem;
-			height: 13rem;
-			border-radius: 50%;
-
-			position: absolute;
-			top: -7rem;
-			right: 0;
-			left: 0;
-			margin-left: auto;
-			margin-right: auto;
-
-			@media (prefers-reduced-motion: no-preference) {
-				@keyframes App-logo-spin {
-					from {
-						transform: rotate(0deg);
-					}
-					to {
-						transform: rotate(360deg);
-					}
-				}
-
-				animation: App-logo-spin infinite 5s linear;
-			}
-		}
+	&:hover {
+		color: $decor-primary-color;
 	}
 }
 
-.wedding {
-	font-size: $h1-font-size;
-	font-weight: bold;
+.italic-text {
+	font-style: italic;
+}
 
-	margin: 3rem 0;
+.content {
+	display: flex;
+	flex-flow: column;
+	padding: 0 3rem;
 
-	@include phone-view {
-		font-size: $h2-font-size;
+	@include ipad-view {
+		width: 100%;
 	}
 
-	&::before {
-		content: '<';
+	@include desktop-view {
+		width: 60%;
 	}
+}
 
-	&::after {
-		content: '>';
-	}
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
-	&:last-child {
-		&::before {
-			content: '</';
-			margin-right: 0.5rem;
-		}
+	height: 3.5rem;
+	background-color: $decor-primary-color;
+	color: $text-primary-color;
+	font-weight: 500;
+
+	cursor: pointer;
+	transition: letter-spacing 1s ease-in-out;
+
+	&:hover,
+	&:focus {
+		background-color: $decor-tertiary-color;
+		border: 1px solid $decor-tertiary-color;
+		letter-spacing: 0.5rem;
 	}
 }
