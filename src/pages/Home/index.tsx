@@ -1,8 +1,8 @@
 import React from 'react'
-import Form from '../../components/Form'
 
-import Footer from '../Footer'
-import Header from '../Header'
+import Form from 'components/Form'
+import Footer from 'pages/Footer'
+import Header from 'pages/Header'
 
 export const Home: React.FC = () => (
 	<>
