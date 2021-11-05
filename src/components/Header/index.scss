@@ -153,6 +153,21 @@ header {
 				}
 			}
 
+			& .address-animation::before {
+				content: "Šárovcova 1206";
+				animation: change-adress infinite 7s;
+			}
+
+			@keyframes change-adress {
+				0% {
+					content: "Šárovcova 1206";
+				}
+	  
+				50% {
+					content: "Šárovcova 794";
+				}
+			}
+
 			& > .date {
 				font-size: $h2-font-size;
 				transform: scaleY(1.3);

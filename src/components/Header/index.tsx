@@ -3,8 +3,8 @@ import React from 'react'
 import './index.scss'
 
 export const Header: React.FC = () => {
-	const date = 'XX. XX. 2022'
-	const address = ['Šárovcova 1206', 'Třebechovice pod Orebem', '503 46']
+	const date = 'XX. XX. 2023'
+	const address = ['Šárovcova 794', 'Třebechovice pod Orebem', '503 46']
 
 	return (
 		<header>
@@ -12,7 +12,10 @@ export const Header: React.FC = () => {
 			<section className="header__containers">
 				<article className="container__content">
 					<h3>WHERE?</h3>
-					<span className="address italic-text">{address[0]}</span>
+					<span 
+						className="address italic-text address-animation" 
+						title="Both addresses are valid and lead to the same house! :) No. 794 is a bit easier to spot."
+					></span>
 					<span className="address italic-text">{address[1]}</span>
 					<span className="address italic-text">{address[2]}</span>
 
