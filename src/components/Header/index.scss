@@ -154,17 +154,17 @@ header {
 			}
 
 			& .address-animation::before {
-				content: "Šárovcova 1206";
+				content: attr(data-address-1);
 				animation: change-adress infinite 7s;
 			}
 
 			@keyframes change-adress {
 				0% {
-					content: "Šárovcova 1206";
+					content: attr(data-address-1);
 				}
 	  
 				50% {
-					content: "Šárovcova 794";
+					content: attr(data-address-2);
 				}
 			}
 
