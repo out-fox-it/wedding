@@ -5,10 +5,10 @@ import './index.scss'
 export const Header: React.FC = () => {
 	const date = 'XX. XX. 2023'
 	const address = {
-		street: "Šárovcova",
+		street: 'Šárovcova',
 		building: [794, 1206],
-		town: "Třebechovice pod Orebem",
-		postalCode: "503 46"
+		town: 'Třebechovice pod Orebem',
+		postalCode: '503 46',
 	}
 
 	return (
@@ -17,9 +17,9 @@ export const Header: React.FC = () => {
 			<section className="header__containers">
 				<article className="container__content">
 					<h3>WHERE?</h3>
-					<span 
-						className="address italic-text address-animation" 
-						data-address-1={address.street+' '+address.building[0]}
+					<span
+						className="address italic-text address-animation"
+						data-address-1={address.street + ' ' + address.building[0]}
 						data-address-2={`${address.street} ${address.building[1]}`}
 						title="Both addresses are valid and lead to the same house! :) No. 794 is a bit easier to spot."
 					></span>
