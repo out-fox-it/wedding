@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "lint:fix": "next lint --fix"
+    "lint:fix": "next lint --fix",
+    "format": "prettier --check .",
+    "format:fix": "prettier --write ."
   },
   "dependencies": {
     "next": "12.2.4",
@@ -18,12 +20,14 @@
     "@strv/eslint-config-node": "^3.2.0",
     "@strv/eslint-config-react": "^4.2.0",
     "@strv/eslint-config-typescript": "^3.2.0",
+    "@strv/prettier-config": "^2.0.0",
     "@types/node": "18.6.5",
     "@types/react": "18.0.17",
     "@types/react-dom": "18.0.6",
     "eslint": "8.21.0",
     "eslint-config-next": "12.2.4",
     "eslint-plugin-import": "^2.26.0",
+    "prettier": "^2.7.1",
     "typescript": "4.7.4"
   }
 }

@@ -1,0 +1,7 @@
+# 3rd Party Code
+node_modules/
+
+# Generated
+.next/
+.vercel/
+pnpm-lock.yaml
