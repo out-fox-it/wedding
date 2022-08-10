@@ -50,7 +50,11 @@ module.exports = {
       },
       rules: {
         'import/no-unused-modules': ['warn', { unusedExports: true }],
-        'no-console': ['warn', { allow: ['info', 'error'] }],
+        'no-console': ['warn', { allow: ['info', 'error', 'table'] }],
+        '@typescript-eslint/no-unused-vars': [
+          'error',
+          { ignoreRestSiblings: true },
+        ],
       },
     },
   ],
