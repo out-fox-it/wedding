@@ -50,6 +50,7 @@ module.exports = {
       },
       rules: {
         'import/no-unused-modules': ['warn', { unusedExports: true }],
+        'no-console': ['warn', { allow: ['info', 'error'] }],
       },
     },
   ],
