@@ -19,6 +19,11 @@ module.exports = {
       parserOptions: {
         project: 'tsconfig.json',
       },
+      settings: {
+        'import/resolver': {
+          typescript: {},
+        },
+      },
     },
     {
       files: ['**/*.tsx'],
@@ -34,6 +39,11 @@ module.exports = {
       parserOptions: {
         project: 'tsconfig.json',
       },
+      settings: {
+        'import/resolver': {
+          typescript: {},
+        },
+      },
     },
     {
       files: ['scripts/**/*.ts'],
@@ -47,6 +57,11 @@ module.exports = {
       ],
       parserOptions: {
         project: 'scripts/tsconfig.json',
+      },
+      settings: {
+        'import/resolver': {
+          typescript: {},
+        },
       },
       rules: {
         'import/no-unused-modules': ['warn', { unusedExports: true }],

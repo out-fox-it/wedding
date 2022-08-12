@@ -10,4 +10,9 @@ module.exports = {
   eslint: {
     dirs: ['src', 'scripts'],
   },
+  i18n: {
+    locales: ['en', 'cs'],
+    defaultLocale: 'en',
+    localeDetection: false,
+  },
 }
