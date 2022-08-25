@@ -1,5 +1,29 @@
 {
-  "Home": {
-    "title": "Hello, World!"
+  "Global": {
+    "title": "WeddinG",
+    "date": "{weddingDate}"
+  },
+  "HeaderFieldset": {
+    "AddressFieldset": {
+      "legendText": "ADDRESS",
+      "street": "Šárovcova",
+      "streetNumber": ["1206", "794"],
+      "postalCode": "503 46",
+      "town": "Třebechovice pod Orebem",
+      "headerFieldsetLinks": {
+        "map": "map",
+        "parking": "parking",
+        "hotels": "hotels"
+      }
+    },
+    "DateFieldset": {
+      "title": "WE'RE GETTING MARRIED!"
+    },
+    "LogInFieldset": {
+      "legendText": "LOG IN",
+      "instructions": "TO CONFIRM YOU'LL ATTEND, PLEASE FILL IN THE FORM:",
+      "buttonSignUp": "NEW GUEST",
+      "buttonLogIn": "LOG IN"
+    }
   }
 }
