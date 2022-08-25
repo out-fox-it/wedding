@@ -1,5 +1,29 @@
 {
-  "Home": {
-    "title": "Ahoj světe!"
+  "Global": {
+    "title": "svatební oznámení",
+    "date": "{weddingDate}"
+  },
+  "HeaderFieldset": {
+    "AddressFieldset": {
+      "legendText": "MÍSTO KONÁNÍ",
+      "street": "Šárovcova",
+      "streetNumber": ["1206", "794"],
+      "postalCode": "503 46",
+      "town": "Třebechovice pod Orebem",
+      "headerFieldsetLinks": {
+        "map": "mapa",
+        "parking": "parkování",
+        "hotels": "hotely"
+      }
+    },
+    "DateFieldset": {
+      "title": "BUDEME SE BRÁT!"
+    },
+    "LogInFieldset": {
+      "legendText": "PŘIHLÁŠENÍ",
+      "instructions": "POKUD CHCETE PŘIJET, VYPLŇTE, PROSÍM, FORMULÁŘ:",
+      "buttonSignUp": "JSEM TU POPRVÉ",
+      "buttonLogIn": "VRACÍM SE :)"
+    }
   }
 }
