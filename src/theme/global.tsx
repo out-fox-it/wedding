@@ -1,31 +1,40 @@
 import { createGlobalStyle } from 'styled-components'
+import 'sanitize.css'
+
+import { colors } from './colors'
+import { typography } from './typography'
 
 export const GlobalStyle = createGlobalStyle`
-    *, *::before, *::after {
-        box-sizing: border-box;
-        margin: 0;
-    }
+  html {
+    font-size: 62.5%;
+  }
 
-    html, body, #__next {
-        height: 100%;
-        padding: 0;
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-            Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    }
+  /* Allow 'font-smooth' */
+  /* stylelint-disable property-no-unknown */
+  body {
+    ${typography.paragraph}
+    font-family: 'Oxygen', sans-serif;
+    background: ${colors.background};
+    color: ${colors.text.base};
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smooth: always;
+  }
 
-    a {
-        color: inherit;
-        text-decoration: none;
-    }
+  #__next {
+    min-height: 100vh;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
 
-    @media (prefers-color-scheme: dark) {
-        html {
-            color-scheme: dark;
-        }
-        body {
-            color: white;
-            background: black;
-        }
+    & > main {
+      flex-grow: 1;
     }
+  }
+
+  h1, h2, h3, h4 {
+    text-align: center;
+  }
 `
