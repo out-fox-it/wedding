@@ -29,6 +29,9 @@ module.exports = {
           typescript: {},
         },
       },
+      rules: {
+        'react/require-default-props': [0],
+      },
     },
     {
       files: ['**/*.tsx'],
@@ -48,6 +51,9 @@ module.exports = {
         'import/resolver': {
           typescript: {},
         },
+      },
+      rules: {
+        'react/require-default-props': [0],
       },
     },
     {
