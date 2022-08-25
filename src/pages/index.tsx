@@ -1,16 +1,17 @@
 import type { GetStaticProps, NextPage } from 'next'
-import { useTranslations } from 'next-intl'
 
-import { LocalesSwitcher } from '~/components/LocalesSwitcher'
+import { Footer } from '~/components/Footer'
+import { Header } from '~/components/Header'
 import { loadTranslations } from '~/utils/load-translations'
 
 const Home: NextPage = () => {
-  const t = useTranslations('Home')
-
   return (
     <>
-      <h1>{t('title')}</h1>
-      <LocalesSwitcher />
+      <Header />
+
+      <main>content page</main>
+
+      <Footer />
     </>
   )
 }
