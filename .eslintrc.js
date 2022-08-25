@@ -7,7 +7,12 @@ module.exports = {
   overrides: [
     {
       files: ['**/*.ts'],
-      excludedFiles: ['next-env.d.ts'],
+      excludedFiles: [
+        'next-env.d.ts',
+        '**/styled.ts',
+        'theme/*.ts',
+        'assets/*.tsx',
+      ],
       extends: [
         'eslint:recommended',
         'next/core-web-vitals',
