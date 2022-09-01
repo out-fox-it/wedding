@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl'
 import type { FC } from 'react'
 
-import { IconHeart } from '~/assets/IconHeart/IconHeart'
+import { IconHeart } from '~/assets/IconHeart'
 import { Fieldset } from '~/components/Fieldset'
 import { colors } from '~/theme/colors'
 import { StyledLabel } from '~/theme/layout'
