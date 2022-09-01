@@ -4,6 +4,7 @@ import { StyledFieldset } from './styled'
 
 type FieldsetProps = {
   borderColor: string
+  borderThickness?: 'slim' | 'normal' | 'thick'
   legendText?: string
   legendSvgComponent?: ReactElement
   children?: ReactNode
@@ -11,6 +12,7 @@ type FieldsetProps = {
 
 export const Fieldset: FC<FieldsetProps> = ({
   borderColor,
+  borderThickness,
   children,
   legendText,
   legendSvgComponent,
@@ -19,6 +21,7 @@ export const Fieldset: FC<FieldsetProps> = ({
     // TODO: hasSVGLegend should have a better boolean logic!
     <StyledFieldset
       borderColor={borderColor}
+      borderThickness={borderThickness}
       hasSvgLegend={legendSvgComponent ? true : false}
     >
       {legendText && <legend>{legendText}</legend>}
