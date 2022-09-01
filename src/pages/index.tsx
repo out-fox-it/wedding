@@ -6,20 +6,18 @@ import { AuthForm } from '~/features/AuthForm'
 import { WeddingForm } from '~/features/WeddingForm'
 import { loadTranslations } from '~/utils/load-translations'
 
-const Home: NextPage = () => {
-  return (
-    <>
-      <Header />
+const Home: NextPage = () => (
+  <>
+    <Header />
 
-      <main>
-        <AuthForm />
-        <WeddingForm />
-      </main>
+    <main>
+      <AuthForm />
+      <WeddingForm />
+    </main>
 
-      <Footer />
-    </>
-  )
-}
+    <Footer />
+  </>
+)
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => ({
   props: { messages: locale ? await loadTranslations(locale) : {} },
