@@ -1,4 +1,3 @@
-/* eslint-disable react/forbid-dom-props */
 import { useState } from 'react'
 import type { FC, InputHTMLAttributes } from 'react'
 
@@ -115,6 +114,7 @@ export const Form: FC<IFormProps> = ({
                           <input
                             type="radio"
                             name={identifier}
+                            // eslint-disable-next-line react/forbid-dom-props
                             id={optionTitle}
                             value={optionTitle}
                             onChange={handleInputChange}
