@@ -18,11 +18,10 @@ export const Fieldset: FC<FieldsetProps> = ({
   legendSvgComponent,
 }) => {
   return (
-    // TODO: hasSVGLegend should have a better boolean logic!
     <StyledFieldset
       borderColor={borderColor}
       borderThickness={borderThickness}
-      hasSvgLegend={legendSvgComponent ? true : false}
+      hasSvgLegend={!!legendSvgComponent}
     >
       {legendText && <legend>{legendText}</legend>}
       {legendSvgComponent && <legend>{legendSvgComponent}</legend>}
