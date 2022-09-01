@@ -8,7 +8,7 @@ import { Fieldset } from '~/components/Fieldset'
 import { colors } from '~/theme/colors'
 import { StyledLink } from '~/theme/layout'
 
-import { LinksContainer, StyledAddressContainer } from '../styled'
+import { LinksContainer, StyledAddressContainer } from './styled'
 
 export const AddressFieldset: FC = () => {
   const t = useTranslations('HeaderFieldset.AddressFieldset')
