@@ -31,6 +31,10 @@ export const GlobalStyle = createGlobalStyle`
 
     & > main {
       flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      padding: 3rem 0;
     }
   }
 

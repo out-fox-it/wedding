@@ -2,6 +2,8 @@ import type { GetStaticProps, NextPage } from 'next'
 
 import { Footer } from '~/components/Footer'
 import { Header } from '~/components/Header'
+import { AuthForm } from '~/features/AuthForm'
+import { WeddingForm } from '~/features/WeddingForm'
 import { loadTranslations } from '~/utils/load-translations'
 
 const Home: NextPage = () => {
@@ -9,7 +11,10 @@ const Home: NextPage = () => {
     <>
       <Header />
 
-      <main>content page</main>
+      <main>
+        <AuthForm />
+        <WeddingForm />
+      </main>
 
       <Footer />
     </>
