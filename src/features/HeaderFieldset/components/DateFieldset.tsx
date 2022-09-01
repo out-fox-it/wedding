@@ -3,15 +3,19 @@ import type { FC } from 'react'
 
 import { IconHeart } from '~/assets/IconHeart/IconHeart'
 import { Fieldset } from '~/components/Fieldset'
-import { weddingDate } from '~/pages/_app'
 import { colors } from '~/theme/colors'
 import { StyledLabel } from '~/theme/typography'
 
+const weddingDate = new Date('2023-08-19') // 19th August 2023
+
+const formattedWeddingDate = new Intl.DateTimeFormat('cs-CS', {
+  day: '2-digit',
+  month: '2-digit',
+  year: 'numeric',
+}).format(weddingDate)
+
 export const DateFieldset: FC = () => {
-  // TODO: I don't know how to use multiple objects in one hook. :(
-  // Better explained in Address Fieldset!
-  const tGlobal = useTranslations('Global')
-  const tDate = useTranslations('HeaderFieldset.DateFieldset')
+  const t = useTranslations('HeaderFieldset.DateFieldset')
 
   return (
     <Fieldset
@@ -19,10 +23,10 @@ export const DateFieldset: FC = () => {
       legendSvgComponent={<IconHeart />}
     >
       <StyledLabel labelIsBold labelFontSize="small">
-        {tDate('title')}
+        {t('title')}
       </StyledLabel>
       <StyledLabel labelFontSize="large" labelTextColor={colors.accent.yellow}>
-        {tGlobal('date', { weddingDate: weddingDate })}
+        {formattedWeddingDate}
       </StyledLabel>
     </Fieldset>
   )

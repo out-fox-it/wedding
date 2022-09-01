@@ -1,7 +1,6 @@
 {
   "Global": {
-    "title": "svatební oznámení",
-    "date": "{weddingDate}"
+    "title": "svatební oznámení"
   },
   "HeaderFieldset": {
     "AddressFieldset": {
