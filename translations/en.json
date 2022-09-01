@@ -25,5 +25,16 @@
       "buttonSignUp": "NEW GUEST",
       "buttonLogIn": "LOG IN"
     }
+  },
+  "Form": {
+    "AuthForm": {
+      "formTitle": "REGISTRATION FORM",
+      "formInputs": {
+        "invitationCode": "ENTER YOUR INVITATION CODE",
+        "username": "ENTER YOUR USERNAME",
+        "password": "ENTER YOUR PASSWORD"
+      },
+      "formButtonText": "CLICK HERE TO REGISTER!"
+    }
   }
 }
