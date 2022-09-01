@@ -25,5 +25,16 @@
       "buttonSignUp": "JSEM TU POPRVÉ",
       "buttonLogIn": "VRACÍM SE :)"
     }
+  },
+  "Form": {
+    "AuthForm": {
+      "formTitle": "REGISTRAČNÍ FORMULÁŘ",
+      "formInputs": {
+        "invitationCode": "ZADEJ SVŮJ KÓD POZVÁNKY",
+        "username": "VYMYSLI SI PŘIHLAŠOVACÍ JMÉNO/PŘEZDÍVKU",
+        "password": "VYMYSLI SI HESLO"
+      },
+      "formButtonText": "KLIKNI SEM PRO REGISTRACI!"
+    }
   }
 }
