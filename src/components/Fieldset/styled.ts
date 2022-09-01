@@ -4,12 +4,26 @@ import { typography } from '~/theme/typography'
 
 interface FieldsetProps {
   borderColor: string
+  borderThickness?: 'slim' | 'normal' | 'thick'
   hasSvgLegend: boolean
 }
 
 export const StyledFieldset = styled.fieldset<FieldsetProps>`
   background-color: ${colors.background};
-  border: 0.35rem solid ${(props) => props.borderColor};
+  border-color: ${(props) => props.borderColor};
+  border-style: solid;
+  border-width: ${(props) => {
+    switch (props.borderThickness) {
+      case 'slim':
+        return '1px'
+      case 'normal':
+        return '0.35rem'
+      case 'thick':
+        return '1rem'
+      default:
+        return '0.35rem'
+    }
+  }};
 
   & > legend {
     ${typography.label.medium}
