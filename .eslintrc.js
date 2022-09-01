@@ -7,12 +7,7 @@ module.exports = {
   overrides: [
     {
       files: ['**/*.ts'],
-      excludedFiles: [
-        'next-env.d.ts',
-        '**/styled.ts',
-        'theme/*.ts',
-        'assets/*.tsx',
-      ],
+      excludedFiles: ['next-env.d.ts'],
       extends: [
         'eslint:recommended',
         'next/core-web-vitals',
@@ -28,9 +23,6 @@ module.exports = {
         'import/resolver': {
           typescript: {},
         },
-      },
-      rules: {
-        'react/require-default-props': [0],
       },
     },
     {
