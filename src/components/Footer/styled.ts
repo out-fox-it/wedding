@@ -1,5 +1,6 @@
 import styled from 'styled-components'
-import { typography, htmlTagLookalike } from '~/theme/typography'
+import { htmlTagLookalike } from '~/theme/layout'
+import { typography } from '~/theme/typography'
 
 export const StyledHtmlTagLookalike = styled.span`
   ${typography.label.large}

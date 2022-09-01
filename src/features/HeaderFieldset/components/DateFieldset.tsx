@@ -4,7 +4,7 @@ import type { FC } from 'react'
 import { IconHeart } from '~/assets/IconHeart/IconHeart'
 import { Fieldset } from '~/components/Fieldset'
 import { colors } from '~/theme/colors'
-import { StyledLabel } from '~/theme/typography'
+import { StyledLabel } from '~/theme/layout'
 
 const weddingDate = new Date('2023-08-19') // 19th August 2023
 
