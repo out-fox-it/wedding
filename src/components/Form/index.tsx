@@ -3,7 +3,7 @@ import type { FC, InputHTMLAttributes } from 'react'
 
 import { Car } from '~/assets/FormIcons/Car'
 import { colors } from '~/theme/colors'
-import { StyledLabel } from '~/theme/typography'
+import { StyledLabel } from '~/theme/layout'
 
 import { FormInputPassword } from './components/FormInputPassword'
 import { CheckInput, StyledForm } from './styled'

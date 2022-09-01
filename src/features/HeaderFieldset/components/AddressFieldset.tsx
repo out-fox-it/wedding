@@ -6,7 +6,7 @@ import { useRef } from 'react'
 import { CopyToClipboard } from '~/components/CopyToClipboard'
 import { Fieldset } from '~/components/Fieldset'
 import { colors } from '~/theme/colors'
-import { StyledLink } from '~/theme/typography'
+import { StyledLink } from '~/theme/layout'
 
 import { LinksContainer, StyledAddressContainer } from '../styled'
 
