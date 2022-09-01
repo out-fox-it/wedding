@@ -47,10 +47,10 @@ export const StyledAddressContainer = styled.article`
 
   & > span:first-child::before {
     content: attr(data-address-1);
-    animation: change-adress infinite 7s;
+    animation: change-address infinite 7s;
   }
 
-  @keyframes change-adress {
+  @keyframes change-address {
     0% {
       content: attr(data-address-1);
     }
