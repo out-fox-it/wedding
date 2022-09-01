@@ -93,6 +93,7 @@ export const htmlTagLookalike = css<HtmlTagLookalikeProps>`
     content: ${(props) => (props.isHtmlTagOpen ? `'<'` : `'</'`)};
     padding-right: 1rem;
   }
+
   &::after {
     content: '>';
     padding-left: 1rem;

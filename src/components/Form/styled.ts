@@ -70,11 +70,11 @@ export const StyledForm = styled.form`
     color: ${colors.text.base};
     outline: none;
 
-    // Hack to override yellow :autofill background!
-    // Docs: https://developer.mozilla.org/en-US/docs/Web/CSS/:autofill
-    // Solution: https://stackoverflow.com/a/19426087
+    /* Hack to override yellow :autofill background!
+       Docs: https://developer.mozilla.org/en-US/docs/Web/CSS/:autofill
+       Solution: https://stackoverflow.com/a/19426087 */
     &:-webkit-autofill {
-      box-shadow: 0 0 0px 1000px ${colors.background} inset;
+      box-shadow: 0 0 0 1000px ${colors.background} inset;
     }
 
     &:focus {
