@@ -27,8 +27,7 @@ export const FormInputPassword: FC<IFormInputPasswordProps> = ({
 }) => {
   const [isPasswordHidden, setIsPasswordHidden] = useState<boolean>(true)
 
-  const togglePassword: () => void = () =>
-    setIsPasswordHidden(!isPasswordHidden)
+  const togglePassword = (): void => setIsPasswordHidden(!isPasswordHidden)
 
   return (
     <StyledFormInputPasswordLabel
