@@ -23,7 +23,7 @@ export const AuthForm: FC = () => {
       actionOnSubmit={(formData) => {
         const authFormResults = {
           invitationCode: formData.invitationCode,
-          username: formData.userName,
+          username: formData.username,
           password: formData.password,
         }
 
@@ -32,7 +32,6 @@ export const AuthForm: FC = () => {
       formInputs={[
         {
           typeOfInput: 'text',
-          type: 'text',
           identifier: 'invitationCode',
           label: 'invitationCode',
           placeholder: t('formInputs.invitationCode'),
@@ -40,7 +39,6 @@ export const AuthForm: FC = () => {
         },
         {
           typeOfInput: 'text',
-          type: 'text',
           identifier: 'username',
           label: 'username',
           placeholder: t('formInputs.username'),
