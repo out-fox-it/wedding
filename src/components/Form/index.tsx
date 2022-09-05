@@ -1,23 +1,32 @@
-import { useState } from 'react'
-import type { FC, InputHTMLAttributes } from 'react'
+import { useRef, useState } from 'react'
+import type { FC, InputHTMLAttributes, ReactElement, ReactNode } from 'react'
 
-import { Car } from '~/assets/FormIcons/Car'
-import { colors } from '~/theme/colors'
 import { StyledLabel } from '~/theme/layout'
 
+import { FormInputCheck } from './components/FormInputCheck'
 import { FormInputPassword } from './components/FormInputPassword'
-import { CheckInput, StyledForm } from './styled'
+import { FormInputsToArray } from './components/FormInputsToArray'
+import { StyledForm } from './styled'
 
 import { Button } from '../Button'
-import { Fieldset } from '../Fieldset'
 
 export interface IFormInput extends InputHTMLAttributes<HTMLInputElement> {
-  typeOfInput: 'text' | 'password' | 'textarea' | 'check'
+  typeOfInput: 'text' | 'password' | 'textarea' | 'check' | 'inputsToArray'
   identifier: string
   label: string
   checkOptions?: Array<{
-    optionTitle: string
+    optionIdentifier: string
+    optionText: string | ReactElement | Iterable<ReactNode>
+    optionIcon: JSX.Element
   }>
+  inputOptions?: Array<{
+    inputTitle: string
+    inputPlaceholder?: string
+  }>
+  addMoreOptionsButtonText?: string
+  // "placeholderRich" adheres to intl-next library typing of rich translations
+  // deprecatted, any and default types were ommited
+  placeholderRich?: string | ReactElement | Iterable<ReactNode>
 }
 
 export interface IFormDataType {
@@ -42,8 +51,9 @@ export const Form: FC<IFormProps> = ({
   submitButtonText,
 }) => {
   const [formData, setFormData] = useState<IFormDataType>({})
+  const formRef = useRef<HTMLFormElement>(null)
 
-  const clearFormData = () => void setFormData({})
+  const clearFormData = () => formRef.current?.reset()
 
   const handleFormData = async (): Promise<void> => {
     await actionOnSubmit(formData)
@@ -66,6 +76,7 @@ export const Form: FC<IFormProps> = ({
 
   return (
     <StyledForm
+      ref={formRef}
       autoComplete="off"
       id={formIdentifier}
       onSubmit={(formEvent) => {
@@ -78,14 +89,23 @@ export const Form: FC<IFormProps> = ({
         {formTitle}
       </StyledLabel>
       {formInputs.map(
-        ({ typeOfInput, identifier, type, placeholder, checkOptions }) => (
+        ({
+          typeOfInput,
+          identifier,
+          label,
+          placeholder,
+          placeholderRich,
+          inputOptions,
+          checkOptions,
+          addMoreOptionsButtonText,
+        }) => (
           <div className="form__children" key={identifier}>
             {typeOfInput === 'text' && (
               <label htmlFor={identifier}>
                 <input
                   autoComplete="off"
                   name={identifier}
-                  type={type}
+                  type="text"
                   value={formData.identifier}
                   placeholder={placeholder}
                   onChange={handleInputChange}
@@ -100,34 +120,24 @@ export const Form: FC<IFormProps> = ({
                 onChange={handleInputChange}
               />
             )}
+            {typeOfInput === 'inputsToArray' && (
+              <FormInputsToArray
+                label={label}
+                onChange={handleInputChange}
+                identifier={identifier}
+                inputOptions={inputOptions}
+                placeholderRich={placeholderRich}
+                addMoreOptionsButtonText={addMoreOptionsButtonText}
+              />
+            )}
             {typeOfInput === 'check' && (
-              <label htmlFor={identifier}>
-                <Fieldset
-                  borderColor={colors.accent.pink}
-                  borderThickness="slim"
-                  legendText="Parking"
-                >
-                  <CheckInput>
-                    {checkOptions &&
-                      checkOptions.map(({ optionTitle }) => (
-                        <div key={optionTitle}>
-                          <input
-                            type="radio"
-                            name={identifier}
-                            // eslint-disable-next-line react/forbid-dom-props
-                            id={optionTitle}
-                            value={optionTitle}
-                            onChange={handleInputChange}
-                          />
-                          <label htmlFor={optionTitle}>
-                            <Car />
-                            {optionTitle}
-                          </label>
-                        </div>
-                      ))}
-                  </CheckInput>
-                </Fieldset>
-              </label>
+              <FormInputCheck
+                identifier={identifier}
+                checkOptions={checkOptions}
+                label={label}
+                placeholder={placeholder}
+                onChange={handleInputChange}
+              />
             )}
             {typeOfInput === 'textarea' && (
               <label htmlFor={identifier}>
