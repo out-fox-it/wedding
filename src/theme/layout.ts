@@ -1,6 +1,6 @@
-import styled, { css } from "styled-components"
-import { colors } from "./colors"
-import { typography } from "./typography"
+import styled, { css } from 'styled-components'
+import { colors } from './colors'
+import { typography } from './typography'
 
 export const StyledLink = styled.a`
   text-transform: uppercase;
@@ -55,6 +55,7 @@ export const htmlTagLookalike = css<HtmlTagLookalikeProps>`
     content: ${(props) => (props.isHtmlTagOpen ? `'<'` : `'</'`)};
     padding-right: 1rem;
   }
+
   &::after {
     content: '>';
     padding-left: 1rem;
