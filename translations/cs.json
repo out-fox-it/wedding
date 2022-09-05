@@ -34,6 +34,27 @@
         "password": "VYMYSLI SI HESLO"
       },
       "formButtonText": "KLIKNI SEM PRO REGISTRACI!"
+    },
+    "WeddingForm": {
+      "formTitle": "SVATEBNÍ FORMULÁŘ",
+      "formInputs": {
+        "parking": {
+          "label": "PARKOVÁNÍ",
+          "placeholder": "BUDEŠ POTŘEBOVAT MÍSTO NA ZAPARKOVÁNÍ?",
+          "checkOptions": {
+            "car": "<bold>ANO,</bold> <breakingLine>ALE JENOM DO VEČERA</breakingLine>",
+            "caravan": "<bold>ANO</bold> <breakingLine>A BUDU V NĚM I SPÁT</breakingLine>",
+            "noCar": "<bold>NE,</bold> <breakingLine>PŘIJDU PO SVÝCH</breakingLine>"
+          }
+        },
+        "songs": {
+          "label": "SVATEBNÍ PLAYLIST",
+          "placeholder": "Pojďme dát dohromady svatební playlist - z vašich oblíbených písniček! Nemusí je spojovat žádné téma ani žánr. Chceme slyšet, co se líbí našim hostům! :) <breakingLine><bold>Přidat můžeš 3 až 10 písniček</bold></breakingLine>.",
+          "inputPlaceholder": "NÁZEV PÍSNIČKY / ZPĚVÁK NEBO KAPELA",
+          "addMoreSongsButton": "PŘIDEJ DALŠÍ PÍSNIČKU"
+        }
+      },
+      "formButtonText": "KLIKNI SEM PRO POTVRZENÍ ÚČASTI NA SVATBĚ!"
     }
   }
 }

@@ -14,7 +14,19 @@ const MyApp = ({
   Component,
   pageProps,
 }: AppProps<{ messages?: AbstractIntlMessages }>) => (
-  <NextIntlProvider messages={pageProps.messages}>
+  <NextIntlProvider
+    messages={pageProps.messages}
+    defaultTranslationValues={{
+      breakingLine: (children) => (
+        <>
+          <br />
+          <br />
+          {children}
+        </>
+      ),
+      bold: (children) => <b>{children}</b>,
+    }}
+  >
     <UserProvider>
       <GlobalStyle />
       <DefaultHead />
