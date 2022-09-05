@@ -12,16 +12,21 @@ export const StyledForm = styled.form`
   margin: 0 auto;
   text-transform: uppercase;
 
+  & * p {
+    font-style: italic;
+    padding-bottom: 2rem;
+  }
+
   & > div {
     width: 100%;
   }
 
   ${mq.smallOnly} {
-    width: 80%;
+    width: 100%;
   }
 
   ${mq.medium} {
-    width: 70%;
+    width: 80%;
   }
 
   ${mq.large} {
@@ -35,34 +40,43 @@ export const StyledForm = styled.form`
     width: 100%;
     position: relative;
 
-    @keyframes rotating-stars {
-      to {
-        transform: rotate(360deg);
+    ${mq.medium} {
+      @keyframes rotating-stars {
+        to {
+          transform: rotate(360deg);
+        }
       }
-    }
 
-    &:focus-within::before,
-    &:focus-within::after {
-      content: '*';
-      position: absolute;
-      ${typography.label.medium}
-      line-height: 0;
-      padding-top: 1rem;
-      animation: rotating-stars 1s ease-in-out infinite alternate;
-    }
+      &:focus-within::before,
+      &:focus-within::after {
+        content: '*';
+        position: absolute;
+        ${typography.label.medium}
+        line-height: 0;
+        padding-top: 1rem;
+        animation: rotating-stars 1s ease-in-out infinite alternate;
+      }
 
-    &:focus-within::before {
-      right: 1rem;
-    }
+      &:focus-within::before {
+        right: 2rem;
+      }
 
-    &:focus-within::after {
-      left: 1rem;
+      &:focus-within::after {
+        left: 2rem;
+      }
     }
   }
 
   & input,
   & textarea {
-    width: 85%;
+    ${mq.smallOnly} {
+      width: 90%;
+    }
+
+    ${mq.medium} {
+      width: 85%;
+    }
+
     min-height: 3.5rem;
     padding: 1.5rem 2rem;
     background-color: transparent;
@@ -95,36 +109,14 @@ export const StyledForm = styled.form`
 
   & > button,
   & * fieldset {
-    width: 85%;
-    text-transform: uppercase;
-  }
-`
-
-export const CheckInput = styled.div`
-  display: flex;
-  gap: 2rem;
-
-  & > div > input {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    opacity: 0;
-    overflow: hidden;
-  }
-
-  & > div > label {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    opacity: 0.2;
-
-    &:hover {
-      opacity: 1;
+    ${mq.smallOnly} {
+      width: 90%;
     }
-  }
 
-  & > div > input[type='radio']:checked + label {
-    color: ${colors.accent.yellow};
-    opacity: 1;
+    ${mq.medium} {
+      width: 85%;
+    }
+
+    text-transform: uppercase;
   }
 `

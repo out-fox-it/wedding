@@ -1,6 +1,5 @@
 import type { FC } from 'react'
 
-import { Car } from '~/assets/FormIcons/Car'
 import { Fieldset } from '~/components/Fieldset'
 import { colors } from '~/theme/colors'
 
@@ -38,19 +37,21 @@ export const FormInputCheck: FC<IFormInputCheckProps> = ({
         <p>{placeholder}</p>
         <CheckInput>
           {checkOptions &&
-            checkOptions.map(({ optionTitle }) => (
-              <div key={optionTitle}>
+            checkOptions.map(({ optionIdentifier, optionText, optionIcon }) => (
+              <div key={optionIdentifier}>
                 <input
                   type="radio"
                   name={identifier}
                   // eslint-disable-next-line react/forbid-dom-props
-                  id={optionTitle}
-                  value={optionTitle}
+                  id={optionIdentifier}
+                  value={optionIdentifier}
                   onChange={onChange}
                 />
-                <label htmlFor={optionTitle}>
-                  <Car />
-                  {optionTitle}
+                <label htmlFor={optionIdentifier}>
+                  <div>
+                    {optionIcon}
+                    {optionText}
+                  </div>
                 </label>
               </div>
             ))}
