@@ -34,6 +34,27 @@
         "password": "ENTER YOUR PASSWORD"
       },
       "formButtonText": "CLICK HERE TO REGISTER!"
+    },
+    "WeddingForm": {
+      "formTitle": "WEDDING FORM",
+      "formInputs": {
+        "parking": {
+          "label": "PARKING",
+          "placeholder": "WILL YOU NEED A PLACE TO PARK?",
+          "checkOptions": {
+            "car": "<bold>YES,</bold> <breakingLine>BUT I'M LEAVING IN THE EVENING</breakingLine>",
+            "caravan": "<bold>YES</bold> <breakingLine>AND I'LL SLEEP THERE</breakingLine>",
+            "noCar": "<bold>NO,</bold> <breakingLine>I DON'T NEED PARKING</breakingLine>"
+          }
+        },
+        "songs": {
+          "label": "WEDDING PLAYLIST",
+          "placeholder": "Let's put together a wedding playlist - from your favorite songs! They don't need to follow any theme or genre. We want to hear what you like! :) <breakingLine><bold>You can add anything from 3 to 10 songs</bold></breakingLine>.",
+          "inputPlaceholder": "SONG / SINGER",
+          "addMoreSongsButton": "ADD 1 MORE SONG"
+        }
+      },
+      "formButtonText": "CLICK HERE TO CONFIRM YOU'LL ATTEND THE WEDDING!"
     }
   }
 }
