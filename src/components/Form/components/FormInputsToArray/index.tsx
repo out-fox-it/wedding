@@ -1,5 +1,5 @@
 import type { FC } from 'react'
-import { useState } from 'react'
+import { useCallback, useState } from 'react'
 
 import { Button } from '~/components/Button'
 import { Fieldset } from '~/components/Fieldset'
@@ -11,17 +11,13 @@ import type { IFormInput } from '../..'
 
 interface IFormInputsToArrayProps {
   identifier: string
-  label: string
+  initialNumberOfDisplayedOptions: IFormInput['initialNumberOfDisplayedOptions']
+  label: IFormInput['label']
   placeholder?: IFormInput['placeholder']
   placeholderRich?: IFormInput['placeholderRich']
-  inputOptions: IFormInput['inputOptions']
+  inputOptions?: IFormInput['inputOptions']
   addMoreOptionsButtonText: IFormInput['addMoreOptionsButtonText']
-  onChange: (
-    inputEvent:
-      | React.ChangeEvent<HTMLInputElement>
-      | React.ChangeEvent<HTMLTextAreaElement>
-      | React.ChangeEvent<HTMLSelectElement>,
-  ) => void
+  onChange: (inputEvent: React.ChangeEvent<HTMLInputElement>) => void
 }
 
 export const FormInputsToArray: FC<IFormInputsToArrayProps> = ({
@@ -31,18 +27,18 @@ export const FormInputsToArray: FC<IFormInputsToArrayProps> = ({
   placeholder,
   placeholderRich,
   addMoreOptionsButtonText,
+  initialNumberOfDisplayedOptions,
   onChange,
 }) => {
-  const [numberOfDisplayedOptions, setNumberOfDisplayedOptions] =
-    useState<number>(3)
+  const [numberOfDisplayedOptions, setNumberOfDisplayedOptions] = useState(
+    initialNumberOfDisplayedOptions ?? 0,
+  )
 
-  const handleNumberOfDisplayedOptions = () => {
-    if (!inputOptions) return
-
-    if (inputOptions.length > numberOfDisplayedOptions) {
+  const handleNumberOfDisplayedOptions = useCallback(() => {
+    if (inputOptions && inputOptions.length > numberOfDisplayedOptions) {
       setNumberOfDisplayedOptions((previousNumber) => previousNumber + 1)
     }
-  }
+  }, [inputOptions, numberOfDisplayedOptions, setNumberOfDisplayedOptions])
 
   return (
     <StyledFormInputsToArrayLabel htmlFor={identifier}>
@@ -59,7 +55,7 @@ export const FormInputsToArray: FC<IFormInputsToArrayProps> = ({
             .map(({ inputTitle, inputPlaceholder }, index) => (
               <div key={inputTitle}>
                 <span>
-                  {index < 9 && 0}
+                  {index < inputOptions.length - 1 && 0}
                   {index + 1}.
                 </span>
                 <input

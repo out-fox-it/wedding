@@ -13,10 +13,13 @@ interface IWeddingFormResults {
     songTitle: string
     inputPlaceholder?: string
   }>
+  notes: string
 }
 
+const initialNumberOfDisplayedSongs = 3
+
 export const WeddingForm: FC = () => {
-  const t = useTranslations('Form.WeddingForm')
+  const t = useTranslations('Forms.WeddingForm')
 
   const handleWeddingForm = (weddingFormResults: IWeddingFormResults): void => {
     // TODO: BACKEND <2
@@ -24,12 +27,10 @@ export const WeddingForm: FC = () => {
     console.log(weddingFormResults)
   }
 
-  const songsArray = new Array(10).fill(null).map((_, index) => {
-    return {
-      inputTitle: `song${index}`,
-      inputPlaceholder: t('formInputs.songs.inputPlaceholder'),
-    }
-  })
+  const songsArray = new Array(10).fill(null).map((_, index) => ({
+    inputTitle: `song${index}`,
+    inputPlaceholder: t('formInputs.songs.inputPlaceholder'),
+  }))
 
   return (
     <Form
@@ -39,18 +40,10 @@ export const WeddingForm: FC = () => {
         const weddingFormResults: IWeddingFormResults = {
           cost: formData.cost,
           parking: formData.parking,
-          songs: [
-            { songTitle: formData.song0 },
-            { songTitle: formData.song1 },
-            { songTitle: formData.song2 },
-            { songTitle: formData.song3 },
-            { songTitle: formData.song4 },
-            { songTitle: formData.song5 },
-            { songTitle: formData.song6 },
-            { songTitle: formData.song7 },
-            { songTitle: formData.song8 },
-            { songTitle: formData.song9 },
-          ],
+          songs: songsArray.map(({ inputTitle }) => ({
+            songTitle: formData[inputTitle],
+          })),
+          notes: formData.notes,
         }
 
         void handleWeddingForm(weddingFormResults)
@@ -88,6 +81,13 @@ export const WeddingForm: FC = () => {
           placeholderRich: t.rich('formInputs.songs.placeholder'),
           addMoreOptionsButtonText: t('formInputs.songs.addMoreSongsButton'),
           inputOptions: songsArray,
+          initialNumberOfDisplayedOptions: initialNumberOfDisplayedSongs,
+        },
+        {
+          typeOfInput: 'textarea',
+          identifier: 'notes',
+          label: t('formInputs.notes.label'),
+          placeholder: t('formInputs.notes.placeholder'),
         },
       ]}
       submitButtonText={t('formButtonText')}

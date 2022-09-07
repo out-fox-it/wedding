@@ -39,6 +39,7 @@ export const StyledForm = styled.form`
     align-items: center;
     width: 100%;
     position: relative;
+    flex-direction: column;
 
     ${mq.medium} {
       @keyframes rotating-stars {
@@ -65,6 +66,10 @@ export const StyledForm = styled.form`
         left: 2rem;
       }
     }
+  }
+
+  & fieldset > legend {
+    color: ${colors.accent.purple};
   }
 
   & input,
@@ -104,7 +109,7 @@ export const StyledForm = styled.form`
   & textarea {
     resize: none;
     min-height: 10rem;
-    padding: 1rem 3rem;
+    padding: 2rem;
   }
 
   & > button,

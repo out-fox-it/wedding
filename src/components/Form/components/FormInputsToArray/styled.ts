@@ -13,6 +13,10 @@ export const StyledFormInputsToArrayLabel = styled.label`
     width: 100%;
     position: relative;
 
+    &:last-child {
+      margin-bottom: 1rem;
+    }
+
     & > span {
       ${typography.label.small}
       position: absolute;
@@ -28,6 +32,10 @@ export const StyledFormInputsToArrayLabel = styled.label`
     }
 
     & > input {
+      ${mq.smallOnly} {
+        padding-left: 1rem;
+      }
+
       ${mq.medium} {
         padding-left: 3rem;
       }

@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react'
 import type { FC, InputHTMLAttributes, ReactElement, ReactNode } from 'react'
 
+import { colors } from '~/theme/colors'
 import { StyledLabel } from '~/theme/layout'
 
 import { FormInputCheck } from './components/FormInputCheck'
@@ -13,6 +14,7 @@ import { Button } from '../Button'
 export interface IFormInput extends InputHTMLAttributes<HTMLInputElement> {
   typeOfInput: 'text' | 'password' | 'textarea' | 'check' | 'inputsToArray'
   identifier: string
+  initialNumberOfDisplayedOptions?: number
   label: string
   checkOptions?: Array<{
     optionIdentifier: string
@@ -92,6 +94,7 @@ export const Form: FC<IFormProps> = ({
         ({
           typeOfInput,
           identifier,
+          initialNumberOfDisplayedOptions,
           label,
           placeholder,
           placeholderRich,
@@ -125,6 +128,9 @@ export const Form: FC<IFormProps> = ({
                 label={label}
                 onChange={handleInputChange}
                 identifier={identifier}
+                initialNumberOfDisplayedOptions={
+                  initialNumberOfDisplayedOptions
+                }
                 inputOptions={inputOptions}
                 placeholderRich={placeholderRich}
                 addMoreOptionsButtonText={addMoreOptionsButtonText}
@@ -141,11 +147,14 @@ export const Form: FC<IFormProps> = ({
             )}
             {typeOfInput === 'textarea' && (
               <label htmlFor={identifier}>
+                <StyledLabel labelTextColor={colors.accent.purple} labelIsBold>
+                  {label}
+                </StyledLabel>
                 <textarea
                   name={identifier}
                   value={formData.identifier}
                   placeholder={placeholder}
-                  rows={4}
+                  rows={5}
                   onChange={handleInputChange}
                 />
               </label>

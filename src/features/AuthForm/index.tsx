@@ -4,7 +4,7 @@ import type { FC } from 'react'
 import { Form } from '~/components/Form'
 
 export const AuthForm: FC = () => {
-  const t = useTranslations('Form.AuthForm')
+  const t = useTranslations('Forms.AuthForm')
 
   const handleAuthForm = (authFormResults: {
     invitationCode: string
