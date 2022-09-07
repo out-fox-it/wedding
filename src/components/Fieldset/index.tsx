@@ -16,16 +16,14 @@ export const Fieldset: FC<FieldsetProps> = ({
   children,
   legendText,
   legendSvgComponent,
-}) => {
-  return (
-    <StyledFieldset
-      borderColor={borderColor}
-      borderThickness={borderThickness}
-      hasSvgLegend={!!legendSvgComponent}
-    >
-      {legendText && <legend>{legendText}</legend>}
-      {legendSvgComponent && <legend>{legendSvgComponent}</legend>}
-      <section>{children}</section>
-    </StyledFieldset>
-  )
-}
+}) => (
+  <StyledFieldset
+    borderColor={borderColor}
+    borderThickness={borderThickness}
+    hasSvgLegend={!!legendSvgComponent}
+  >
+    {legendText && <legend>{legendText}</legend>}
+    {legendSvgComponent && <legend>{legendSvgComponent}</legend>}
+    <section>{children}</section>
+  </StyledFieldset>
+)

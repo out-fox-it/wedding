@@ -15,7 +15,7 @@ const formattedWeddingDate = new Intl.DateTimeFormat('cs-CS', {
 }).format(weddingDate)
 
 export const DateFieldset: FC = () => {
-  const t = useTranslations('HeaderFieldset.DateFieldset')
+  const t = useTranslations('Fieldsets.DateFieldset')
 
   return (
     <Fieldset

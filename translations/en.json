@@ -2,7 +2,7 @@
   "Global": {
     "title": "WeddinG"
   },
-  "HeaderFieldset": {
+  "Fieldsets": {
     "AddressFieldset": {
       "legendText": "ADDRESS",
       "street": "Šárovcova",
@@ -25,7 +25,7 @@
       "buttonLogIn": "LOG IN"
     }
   },
-  "Form": {
+  "Forms": {
     "AuthForm": {
       "formTitle": "REGISTRATION FORM",
       "formInputs": {
@@ -52,6 +52,10 @@
           "placeholder": "Let's put together a wedding playlist - from your favorite songs! They don't need to follow any theme or genre. We want to hear what you like! :) <breakingLine><bold>You can add anything from 3 to 10 songs</bold></breakingLine>.",
           "inputPlaceholder": "SONG / SINGER",
           "addMoreSongsButton": "ADD 1 MORE SONG"
+        },
+        "notes": {
+          "label": "NOTES",
+          "placeholder": "THIS FIELD IS FOR ALL THE NOTES AND QUESTIONS THAT ESCAPED OUR MIND BUT MIGHT BE SETTLED IN YOURS! ALSO FEEL FREE TO LEAVE HERE A RECCOMENDATION FOR A WEDDING PRODUCT/SERVICE YOU HAD A GOOD EXPERIENCE WITH, WE'D  LOVE TO GET INSPIRED. <3"
         }
       },
       "formButtonText": "CLICK HERE TO CONFIRM YOU'LL ATTEND THE WEDDING!"

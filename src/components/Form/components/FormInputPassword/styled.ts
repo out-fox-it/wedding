@@ -1,22 +1,28 @@
 import styled from 'styled-components'
 import { colors } from '~/theme/colors'
 
-interface StyledFormInputPasswordLabelProps {
+interface StyledFormInputPasswordContainerProps {
   isButtonActive: boolean
 }
 
-export const StyledFormInputPasswordLabel = styled.label<StyledFormInputPasswordLabelProps>`
-  display: grid !important;
+export const StyledFormInputPasswordContainer = styled.div<StyledFormInputPasswordContainerProps>`
+  display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 93% 7%;
   justify-items: center;
 
-  & > input {
+  & > label {
     grid-row: 1;
     grid-column: 1 / 3;
+
+    & > input {
+      grid-row: 1;
+      grid-column: 1 / 3;
+    }
   }
 
   & > button {
+    z-index: 1;
     width: initial;
     grid-row: 1;
     grid-column: 1;

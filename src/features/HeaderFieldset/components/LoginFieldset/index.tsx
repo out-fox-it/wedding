@@ -6,7 +6,7 @@ import { Fieldset } from '~/components/Fieldset'
 import { colors } from '~/theme/colors'
 
 export const LoginFieldset: FC = () => {
-  const t = useTranslations('HeaderFieldset.LogInFieldset')
+  const t = useTranslations('Fieldsets.LogInFieldset')
 
   return (
     <Fieldset borderColor={colors.accent.purple} legendText={t('legendText')}>

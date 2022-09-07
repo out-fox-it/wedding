@@ -2,7 +2,7 @@
   "Global": {
     "title": "svatební oznámení"
   },
-  "HeaderFieldset": {
+  "Fieldsets": {
     "AddressFieldset": {
       "legendText": "MÍSTO KONÁNÍ",
       "street": "Šárovcova",
@@ -25,7 +25,7 @@
       "buttonLogIn": "VRACÍM SE :)"
     }
   },
-  "Form": {
+  "Forms": {
     "AuthForm": {
       "formTitle": "REGISTRAČNÍ FORMULÁŘ",
       "formInputs": {
@@ -52,6 +52,10 @@
           "placeholder": "Pojďme dát dohromady svatební playlist - z vašich oblíbených písniček! Nemusí je spojovat žádné téma ani žánr. Chceme slyšet, co se líbí našim hostům! :) <breakingLine><bold>Přidat můžeš 3 až 10 písniček</bold></breakingLine>.",
           "inputPlaceholder": "NÁZEV PÍSNIČKY / ZPĚVÁK NEBO KAPELA",
           "addMoreSongsButton": "PŘIDEJ DALŠÍ PÍSNIČKU"
+        },
+        "notes": {
+          "label": "POZNÁMKY",
+          "placeholder": "TOHLE POLÍČKO JE PRO RŮZNORODÉ OTÁZKY A POZNÁMKY, NA KTERÉ JSME SI SAMI NEVZPOMNĚLI. TAKTÉŽ OCENÍME, POKUD ZDE ODKÁŽETE PRODUKTY/SLUŽBY, KTERÉ SE HODÍ NA SVATBU A VY UŽ JSTE S NIMI MĚLI DOBROU ZKUŠENOST, RÁDI SE INSPIRUJEME. <3"
         }
       },
       "formButtonText": "KLIKNI SEM PRO POTVRZENÍ ÚČASTI NA SVATBĚ!"

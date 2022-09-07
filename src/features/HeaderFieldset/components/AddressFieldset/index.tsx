@@ -15,14 +15,19 @@ import { LinksContainer, StyledAddressContainer } from './styled'
 import keepYourSecretsMeme from '../../../../assets/Memes/keepYourSecrets.gif'
 
 export const AddressFieldset: FC = () => {
-  const t = useTranslations('HeaderFieldset.AddressFieldset')
+  const t = useTranslations('Fieldsets.AddressFieldset')
   const fullAddressRef = useRef<HTMLElement>(null)
 
   const { user } = useUser()
 
   return (
     <Fieldset borderColor={colors.accent.purple} legendText={t('legendText')}>
-      {user !== null ? (
+      {!user ? (
+        <Image
+          alt="Alright then... Keep your secrets!"
+          src={keepYourSecretsMeme}
+        />
+      ) : (
         <>
           <CopyToClipboard
             title="Both addresses are valid and lead to the same house! :) No. 794 is a bit easier to spot."
@@ -51,11 +56,6 @@ export const AddressFieldset: FC = () => {
             </Link>
           </LinksContainer>
         </>
-      ) : (
-        <Image
-          alt="Alright then... Keep your secrets!"
-          src={keepYourSecretsMeme}
-        />
       )}
     </Fieldset>
   )

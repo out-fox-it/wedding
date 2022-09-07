@@ -49,9 +49,11 @@ const getElementCompleteText = (element: HTMLElement): string =>
     }, [])
     .join(' ')
 
-export const CopyToClipboard: FC<ICopyToClipboardProps> = (props) => {
-  const { copyRef, title, children } = props
-
+export const CopyToClipboard: FC<ICopyToClipboardProps> = ({
+  copyRef,
+  title,
+  children,
+}) => {
   const copyToClipBoard = (): void => {
     const element = copyRef.current
     if (!element) return
