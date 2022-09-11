@@ -1,0 +1,21 @@
+version: '3.9'
+
+services:
+  database:
+    image: postgres:14-alpine
+    container_name: postgres-database
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - '5432:5432'
+    volumes:
+      - database:/var/lib/postgresql/data:delegated
+    healthcheck:
+      test: pg_isready -U postgres -h localhost
+      interval: 5s
+
+volumes:
+  database:
+    driver: local
