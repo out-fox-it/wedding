@@ -26,6 +26,7 @@
     "prisma:generate": "dotenv -e .env.development -- prisma generate",
     "code:check": "run-p --print-label tsc tsc:scripts format lint lint:css prisma:format",
     "code:fix": "run-p --print-label format:fix lint:fix lint:css prisma:format",
+    "graphql:generate": "graphql-codegen",
     "script": "ts-node"
   },
   "dependencies": {
@@ -41,6 +42,10 @@
     "styled-components": "^5.3.5"
   },
   "devDependencies": {
+    "@graphql-codegen/add": "^3.2.1",
+    "@graphql-codegen/cli": "^2.12.0",
+    "@graphql-codegen/typescript": "^2.7.3",
+    "@graphql-codegen/typescript-resolvers": "^2.7.3",
     "@strv/eslint-config-node": "^3.2.0",
     "@strv/eslint-config-react": "^4.2.0",
     "@strv/eslint-config-typescript": "^3.2.0",
