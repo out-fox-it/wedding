@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import type { GraphQLResolveInfo } from 'graphql'
+import type { GraphQLContext } from './context'
 export type Maybe<T> = T | null
 export type InputMaybe<T> = Maybe<T>
 export type Exact<T extends { [key: string]: unknown }> = {
@@ -148,12 +149,12 @@ export type ResolversParentTypes = ResolversObject<{
 }>
 
 export type QueryResolvers<
-  ContextType = any,
+  ContextType = GraphQLContext,
   ParentType extends ResolversParentTypes['Query'] = ResolversParentTypes['Query'],
 > = ResolversObject<{
   hello?: Resolver<ResolversTypes['String'], ParentType, ContextType>
 }>
 
-export type Resolvers<ContextType = any> = ResolversObject<{
+export type Resolvers<ContextType = GraphQLContext> = ResolversObject<{
   Query?: QueryResolvers<ContextType>
 }>
