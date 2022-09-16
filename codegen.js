@@ -16,6 +16,7 @@ module.exports = {
       ],
       config: {
         useIndexSignature: true,
+        contextType: './context#GraphQLContext',
       },
     },
   },
