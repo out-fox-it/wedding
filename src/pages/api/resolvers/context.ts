@@ -1,6 +1,11 @@
-// eslint-disable-next-line @typescript-eslint/no-empty-interface
-export interface GraphQLContext {}
+import { PrismaClient } from '@prisma/client'
 
-export async function createContext(): Promise<GraphQLContext> {
-  return await Promise.resolve({})
+const prisma = new PrismaClient()
+
+export interface GraphQLContext {
+  prisma: PrismaClient
+}
+
+export function createContext(): GraphQLContext {
+  return { prisma }
 }

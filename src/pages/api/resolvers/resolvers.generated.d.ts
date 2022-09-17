@@ -1,5 +1,9 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import type { GraphQLResolveInfo } from 'graphql'
+import type {
+  GraphQLResolveInfo,
+  GraphQLScalarType,
+  GraphQLScalarTypeConfig,
+} from 'graphql'
 import type { GraphQLContext } from './context'
 export type Maybe<T> = T | null
 export type InputMaybe<T> = Maybe<T>
@@ -12,6 +16,9 @@ export type MakeOptional<T, K extends keyof T> = Omit<T, K> & {
 export type MakeMaybe<T, K extends keyof T> = Omit<T, K> & {
   [SubKey in K]: Maybe<T[SubKey]>
 }
+export type RequireFields<T, K extends keyof T> = Omit<T, K> & {
+  [P in K]-?: NonNullable<T[P]>
+}
 /** All built-in and custom scalars, mapped to their actual values */
 export interface Scalars {
   ID: string
@@ -19,11 +26,35 @@ export interface Scalars {
   Boolean: boolean
   Int: number
   Float: number
+  EmailAddress: string
+  Password: string
+  UUID: string
+}
+
+export interface Mutation {
+  __typename?: 'Mutation'
+  register: User
+}
+
+export interface MutationRegisterArgs {
+  user: UserInput
 }
 
 export interface Query {
   __typename?: 'Query'
   hello: Scalars['String']
+}
+
+export interface User {
+  __typename?: 'User'
+  email: Scalars['EmailAddress']
+  id: Scalars['UUID']
+}
+
+export interface UserInput {
+  code: Scalars['String']
+  email: Scalars['EmailAddress']
+  password: Scalars['Password']
 }
 
 export type WithIndex<TObject> = TObject & Record<string, any>
@@ -137,16 +168,50 @@ export type DirectiveResolverFn<
 /** Mapping between all available schema types and the resolvers types */
 export type ResolversTypes = ResolversObject<{
   Boolean: ResolverTypeWrapper<Scalars['Boolean']>
+  EmailAddress: ResolverTypeWrapper<Scalars['EmailAddress']>
+  Mutation: ResolverTypeWrapper<{}>
+  Password: ResolverTypeWrapper<Scalars['Password']>
   Query: ResolverTypeWrapper<{}>
   String: ResolverTypeWrapper<Scalars['String']>
+  UUID: ResolverTypeWrapper<Scalars['UUID']>
+  User: ResolverTypeWrapper<User>
+  UserInput: UserInput
 }>
 
 /** Mapping between all available schema types and the resolvers parents */
 export type ResolversParentTypes = ResolversObject<{
   Boolean: Scalars['Boolean']
+  EmailAddress: Scalars['EmailAddress']
+  Mutation: {}
+  Password: Scalars['Password']
   Query: {}
   String: Scalars['String']
+  UUID: Scalars['UUID']
+  User: User
+  UserInput: UserInput
 }>
+
+export interface EmailAddressScalarConfig
+  extends GraphQLScalarTypeConfig<ResolversTypes['EmailAddress'], any> {
+  name: 'EmailAddress'
+}
+
+export type MutationResolvers<
+  ContextType = GraphQLContext,
+  ParentType extends ResolversParentTypes['Mutation'] = ResolversParentTypes['Mutation'],
+> = ResolversObject<{
+  register?: Resolver<
+    ResolversTypes['User'],
+    ParentType,
+    ContextType,
+    RequireFields<MutationRegisterArgs, 'user'>
+  >
+}>
+
+export interface PasswordScalarConfig
+  extends GraphQLScalarTypeConfig<ResolversTypes['Password'], any> {
+  name: 'Password'
+}
 
 export type QueryResolvers<
   ContextType = GraphQLContext,
@@ -155,6 +220,25 @@ export type QueryResolvers<
   hello?: Resolver<ResolversTypes['String'], ParentType, ContextType>
 }>
 
+export interface UuidScalarConfig
+  extends GraphQLScalarTypeConfig<ResolversTypes['UUID'], any> {
+  name: 'UUID'
+}
+
+export type UserResolvers<
+  ContextType = GraphQLContext,
+  ParentType extends ResolversParentTypes['User'] = ResolversParentTypes['User'],
+> = ResolversObject<{
+  email?: Resolver<ResolversTypes['EmailAddress'], ParentType, ContextType>
+  id?: Resolver<ResolversTypes['UUID'], ParentType, ContextType>
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>
+}>
+
 export type Resolvers<ContextType = GraphQLContext> = ResolversObject<{
+  EmailAddress?: GraphQLScalarType
+  Mutation?: MutationResolvers<ContextType>
+  Password?: GraphQLScalarType
   Query?: QueryResolvers<ContextType>
+  UUID?: GraphQLScalarType
+  User?: UserResolvers<ContextType>
 }>
