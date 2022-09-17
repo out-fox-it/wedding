@@ -17,6 +17,11 @@ module.exports = {
       config: {
         useIndexSignature: true,
         contextType: './context#GraphQLContext',
+        scalars: {
+          UUID: 'string',
+          EmailAddress: 'string',
+          Password: 'string',
+        },
       },
     },
   },
