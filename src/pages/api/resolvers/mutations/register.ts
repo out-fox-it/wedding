@@ -8,7 +8,7 @@ import type { MutationResolvers } from '../resolvers.generated'
 export const register: MutationResolvers['register'] = async (
   _,
   { user: { code, email, password } },
-  { prisma },
+  { prisma, session },
 ) => {
   const userExists =
     (await prisma.user.count({
@@ -28,7 +28,12 @@ export const register: MutationResolvers['register'] = async (
 
   const passwordHash = await hash(password, config.authentication.saltRounds)
 
-  return await prisma.user.create({
+  const user = await prisma.user.create({
     data: { code, email, password: passwordHash },
   })
+
+  session.user = { id: user.id }
+  await session.save()
+
+  return user
 }
