@@ -21,6 +21,7 @@ module.exports = {
           UUID: 'string',
           EmailAddress: 'string',
           Password: 'string',
+          Void: 'null',
         },
       },
     },
