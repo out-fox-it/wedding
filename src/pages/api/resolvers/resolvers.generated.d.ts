@@ -29,11 +29,19 @@ export interface Scalars {
   EmailAddress: string
   Password: string
   UUID: string
+  Void: null
 }
 
 export interface Mutation {
   __typename?: 'Mutation'
+  login: User
+  logout?: Maybe<Scalars['Void']>
   register: User
+}
+
+export interface MutationLoginArgs {
+  email: Scalars['EmailAddress']
+  password: Scalars['Password']
 }
 
 export interface MutationRegisterArgs {
@@ -42,7 +50,7 @@ export interface MutationRegisterArgs {
 
 export interface Query {
   __typename?: 'Query'
-  hello: Scalars['String']
+  me?: Maybe<User>
 }
 
 export interface User {
@@ -176,6 +184,7 @@ export type ResolversTypes = ResolversObject<{
   UUID: ResolverTypeWrapper<Scalars['UUID']>
   User: ResolverTypeWrapper<User>
   UserInput: UserInput
+  Void: ResolverTypeWrapper<Scalars['Void']>
 }>
 
 /** Mapping between all available schema types and the resolvers parents */
@@ -189,6 +198,7 @@ export type ResolversParentTypes = ResolversObject<{
   UUID: Scalars['UUID']
   User: User
   UserInput: UserInput
+  Void: Scalars['Void']
 }>
 
 export interface EmailAddressScalarConfig
@@ -200,6 +210,13 @@ export type MutationResolvers<
   ContextType = GraphQLContext,
   ParentType extends ResolversParentTypes['Mutation'] = ResolversParentTypes['Mutation'],
 > = ResolversObject<{
+  login?: Resolver<
+    ResolversTypes['User'],
+    ParentType,
+    ContextType,
+    RequireFields<MutationLoginArgs, 'email' | 'password'>
+  >
+  logout?: Resolver<Maybe<ResolversTypes['Void']>, ParentType, ContextType>
   register?: Resolver<
     ResolversTypes['User'],
     ParentType,
@@ -217,7 +234,7 @@ export type QueryResolvers<
   ContextType = GraphQLContext,
   ParentType extends ResolversParentTypes['Query'] = ResolversParentTypes['Query'],
 > = ResolversObject<{
-  hello?: Resolver<ResolversTypes['String'], ParentType, ContextType>
+  me?: Resolver<Maybe<ResolversTypes['User']>, ParentType, ContextType>
 }>
 
 export interface UuidScalarConfig
@@ -234,6 +251,11 @@ export type UserResolvers<
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>
 }>
 
+export interface VoidScalarConfig
+  extends GraphQLScalarTypeConfig<ResolversTypes['Void'], any> {
+  name: 'Void'
+}
+
 export type Resolvers<ContextType = GraphQLContext> = ResolversObject<{
   EmailAddress?: GraphQLScalarType
   Mutation?: MutationResolvers<ContextType>
@@ -241,4 +263,5 @@ export type Resolvers<ContextType = GraphQLContext> = ResolversObject<{
   Query?: QueryResolvers<ContextType>
   UUID?: GraphQLScalarType
   User?: UserResolvers<ContextType>
+  Void?: GraphQLScalarType
 }>

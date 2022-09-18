@@ -2,13 +2,16 @@ export const typeDefs = /* GraphQL */ `
   scalar UUID
   scalar EmailAddress
   scalar Password
+  scalar Void
 
   type Query {
-    hello: String!
+    me: User
   }
 
   type Mutation {
     register(user: UserInput!): User!
+    login(email: EmailAddress!, password: Password!): User!
+    logout: Void
   }
 
   input UserInput {

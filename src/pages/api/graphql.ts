@@ -21,7 +21,7 @@ export default createServer<
     typeDefs,
     resolvers,
   },
-  context: createContext,
+  context: async ({ req, res }) => await createContext(req, res),
   graphiql: config.environment === Environment.Development,
   maskedErrors: config.environment === Environment.Production,
 })
