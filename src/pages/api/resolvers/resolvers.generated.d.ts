@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-empty-interface */
 import type {
   GraphQLResolveInfo,
   GraphQLScalarType,
@@ -201,6 +202,15 @@ export type ResolversParentTypes = ResolversObject<{
   Void: Scalars['Void']
 }>
 
+export interface AuthDirectiveArgs {}
+
+export type AuthDirectiveResolver<
+  Result,
+  Parent,
+  ContextType = GraphQLContext,
+  Args = AuthDirectiveArgs,
+> = DirectiveResolverFn<Result, Parent, ContextType, Args>
+
 export interface EmailAddressScalarConfig
   extends GraphQLScalarTypeConfig<ResolversTypes['EmailAddress'], any> {
   name: 'EmailAddress'
@@ -264,4 +274,8 @@ export type Resolvers<ContextType = GraphQLContext> = ResolversObject<{
   UUID?: GraphQLScalarType
   User?: UserResolvers<ContextType>
   Void?: GraphQLScalarType
+}>
+
+export type DirectiveResolvers<ContextType = GraphQLContext> = ResolversObject<{
+  auth?: AuthDirectiveResolver<any, any, ContextType>
 }>
