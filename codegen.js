@@ -11,6 +11,12 @@ module.exports = {
             content: '/* eslint-disable @typescript-eslint/no-explicit-any */',
           },
         },
+        {
+          add: {
+            content:
+              '/* eslint-disable @typescript-eslint/no-empty-interface */',
+          },
+        },
         'typescript',
         'typescript-resolvers',
       ],
@@ -26,5 +32,10 @@ module.exports = {
       },
     },
   },
-  hooks: { afterAllFileWrite: ['prettier --write', 'eslint --fix'] },
+  hooks: {
+    afterAllFileWrite: [
+      'prettier --write',
+      'eslint --fix --fix-type problem,suggestion,layout',
+    ],
+  },
 }

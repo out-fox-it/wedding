@@ -1,4 +1,6 @@
 export const typeDefs = /* GraphQL */ `
+  directive @auth on FIELD_DEFINITION
+
   scalar UUID
   scalar EmailAddress
   scalar Password

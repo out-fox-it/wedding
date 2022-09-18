@@ -30,6 +30,8 @@
     "script": "ts-node"
   },
   "dependencies": {
+    "@envelop/core": "^2.6.0",
+    "@envelop/generic-auth": "^4.5.0",
     "@graphql-yoga/node": "^2.13.13",
     "@prisma/client": "^4.3.1",
     "bcrypt": "^5.0.1",
