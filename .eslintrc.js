@@ -7,7 +7,7 @@ module.exports = {
   overrides: [
     {
       files: ['**/*.ts'],
-      excludedFiles: ['next-env.d.ts'],
+      excludedFiles: ['next-env.d.ts', 'src/graphql/*.ts'],
       extends: [
         'eslint:recommended',
         'next/core-web-vitals',

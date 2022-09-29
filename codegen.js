@@ -4,6 +4,16 @@
 module.exports = {
   schema: './src/pages/api/schema/*.ts',
   generates: {
+    './src/graphql/': {
+      documents: ['src/api/**/*.ts'],
+      preset: 'client',
+      presetConfig: {
+        fragmentMasking: false,
+      },
+      hooks: {
+        afterOneFileWrite: ['eslint --fix', 'prettier --write'],
+      },
+    },
     './src/pages/api/resolvers/resolvers.generated.d.ts': {
       plugins: [
         {
@@ -30,12 +40,12 @@ module.exports = {
           Void: 'null',
         },
       },
+      hooks: {
+        afterOneFileWrite: [
+          'eslint --fix --fix-type problem,suggestion,layout',
+          'prettier --write',
+        ],
+      },
     },
-  },
-  hooks: {
-    afterAllFileWrite: [
-      'prettier --write',
-      'eslint --fix --fix-type problem,suggestion,layout',
-    ],
   },
 }
