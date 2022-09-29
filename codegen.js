@@ -12,16 +12,8 @@ module.exports = {
   schema: './src/pages/api/schema/*.ts',
   generates: {
     './src/graphql/operations.generated.ts': {
-      plugins: [
-        {
-          add: {
-            content: '/* eslint-disable import/no-unused-modules */',
-          },
-        },
-        'typescript',
-        'typescript-operations',
-        'typed-document-node',
-      ],
+      documents: ['src/graphql/**/*.{gql,graphql}'],
+      plugins: ['typescript', 'typescript-operations', 'typed-document-node'],
       config: {
         documentVariableSuffix: '',
         enumsAsTypes: true,

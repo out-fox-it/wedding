@@ -8,6 +8,7 @@ export const typeDefs = /* GraphQL */ `
 
   type Query {
     me: User
+    hello(name: String!): String!
   }
 
   type Mutation {

@@ -1,4 +1,4 @@
-/* eslint-disable import/no-unused-modules */
+import type { TypedDocumentNode as DocumentNode } from '@graphql-typed-document-node/core'
 export type Maybe<T> = T | null
 export type InputMaybe<T> = Maybe<T>
 export type Exact<T extends { [key: string]: unknown }> = {
@@ -41,7 +41,12 @@ export interface MutationRegisterArgs {
 
 export interface Query {
   __typename?: 'Query'
+  hello: Scalars['String']
   me?: Maybe<User>
+}
+
+export interface QueryHelloArgs {
+  name: Scalars['String']
 }
 
 export interface User {
@@ -55,3 +60,55 @@ export interface UserInput {
   email: Scalars['EmailAddress']
   password: Scalars['Password']
 }
+
+export type HelloQueryVariables = Exact<{
+  name: Scalars['String']
+}>
+
+export interface HelloQuery {
+  __typename?: 'Query'
+  hello: string
+}
+
+export const Hello = {
+  kind: 'Document',
+  definitions: [
+    {
+      kind: 'OperationDefinition',
+      operation: 'query',
+      name: { kind: 'Name', value: 'Hello' },
+      variableDefinitions: [
+        {
+          kind: 'VariableDefinition',
+          variable: { kind: 'Variable', name: { kind: 'Name', value: 'name' } },
+          type: {
+            kind: 'NonNullType',
+            type: {
+              kind: 'NamedType',
+              name: { kind: 'Name', value: 'String' },
+            },
+          },
+        },
+      ],
+      selectionSet: {
+        kind: 'SelectionSet',
+        selections: [
+          {
+            kind: 'Field',
+            name: { kind: 'Name', value: 'hello' },
+            arguments: [
+              {
+                kind: 'Argument',
+                name: { kind: 'Name', value: 'name' },
+                value: {
+                  kind: 'Variable',
+                  name: { kind: 'Name', value: 'name' },
+                },
+              },
+            ],
+          },
+        ],
+      },
+    },
+  ],
+} as unknown as DocumentNode<HelloQuery, HelloQueryVariables>

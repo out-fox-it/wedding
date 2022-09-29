@@ -51,7 +51,12 @@ export interface MutationRegisterArgs {
 
 export interface Query {
   __typename?: 'Query'
+  hello: Scalars['String']
   me?: Maybe<User>
+}
+
+export interface QueryHelloArgs {
+  name: Scalars['String']
 }
 
 export interface User {
@@ -244,6 +249,12 @@ export type QueryResolvers<
   ContextType = GraphQLContext,
   ParentType extends ResolversParentTypes['Query'] = ResolversParentTypes['Query'],
 > = ResolversObject<{
+  hello?: Resolver<
+    ResolversTypes['String'],
+    ParentType,
+    ContextType,
+    RequireFields<QueryHelloArgs, 'name'>
+  >
   me?: Resolver<Maybe<ResolversTypes['User']>, ParentType, ContextType>
 }>
 
