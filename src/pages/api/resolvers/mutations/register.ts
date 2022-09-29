@@ -1,7 +1,7 @@
 import { hash } from 'bcrypt'
 import { GraphQLYogaError } from '@graphql-yoga/node'
 
-import config from '~/config'
+import { authentication } from '~/config'
 
 import type { MutationResolvers } from '../resolvers.generated'
 
@@ -26,7 +26,7 @@ export const register: MutationResolvers['register'] = async (
     )
   }
 
-  const passwordHash = await hash(password, config.authentication.saltRounds)
+  const passwordHash = await hash(password, authentication.saltRounds)
 
   const user = await prisma.user.create({
     data: { code, email, password: passwordHash },

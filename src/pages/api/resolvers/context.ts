@@ -3,7 +3,7 @@ import type { IronSession, IronSessionOptions } from 'iron-session'
 import { getIronSession } from 'iron-session'
 import type { NextApiRequest, NextApiResponse } from 'next'
 
-import config from '~/config'
+import config, { authentication } from '~/config'
 import { Environment } from '~/config/environment'
 
 const prisma = new PrismaClient()
@@ -14,8 +14,8 @@ export interface GraphQLContext {
 }
 
 const sessionOptions: IronSessionOptions = {
-  cookieName: config.authentication.cookieName,
-  password: config.authentication.cookiePassword,
+  cookieName: authentication.cookieName,
+  password: authentication.cookiePassword,
   // secure: true should be used in production (HTTPS) but can't be used in development (HTTP)
   cookieOptions: {
     secure: config.environment === Environment.Production,
