@@ -1,4 +1,4 @@
-const ensureDefinitionOf = (
+export const ensureDefinitionOf = (
   name: string,
   environmentValue?: string,
 ): string => {

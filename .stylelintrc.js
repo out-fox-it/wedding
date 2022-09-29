@@ -11,7 +11,7 @@ module.exports = {
   parserOptions: {
     project: './tsconfig.json',
   },
-  ignoreFiles: ['**/*.gif'],
+  ignoreFiles: ['**/*.gif', '**/*.gql', '**/*.graphql'],
   rules: {
     'value-keyword-case': ['lower', { ignoreKeywords: ['dummyValue'] }],
     'no-descending-specificity': null,

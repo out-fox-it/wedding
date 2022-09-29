@@ -1,9 +1,11 @@
+import { ApolloProvider } from '@apollo/client'
 import type { AbstractIntlMessages } from 'next-intl'
 import { NextIntlProvider } from 'next-intl'
 import type { AppProps as NextAppProps } from 'next/app'
 
 import { DefaultHead } from '~/components/DefaultHead'
 import { UserProvider } from '~/contexts/User'
+import { client } from '~/graphql'
 import { GlobalStyle } from '~/theme/global'
 
 type AppProps<TPageProps = NextAppProps['pageProps']> = {
@@ -27,11 +29,13 @@ const MyApp = ({
       bold: (children) => <b>{children}</b>,
     }}
   >
-    <UserProvider>
-      <GlobalStyle />
-      <DefaultHead />
-      <Component {...pageProps} />
-    </UserProvider>
+    <ApolloProvider client={client}>
+      <UserProvider>
+        <GlobalStyle />
+        <DefaultHead />
+        <Component {...pageProps} />
+      </UserProvider>
+    </ApolloProvider>
   </NextIntlProvider>
 )
 
