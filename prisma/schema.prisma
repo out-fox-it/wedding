@@ -10,9 +10,30 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model Code {
+  code String @id
+  user User?
+}
+
 model User {
-  id       String @id @default(uuid())
-  code     String @unique
-  email    String @unique
+  id       String   @id @default(uuid())
+  Code     Code     @relation(fields: [code], references: [code])
+  code     String   @unique
+  email    String   @unique
   password String
+  profile  Profile?
+}
+
+enum Parking {
+  NO
+  YES
+  SLEEPING
+}
+
+model Profile {
+  user     User     @relation(fields: [id], references: [id])
+  id       String   @id
+  parking  Parking
+  playlist String[]
+  notes    String?
 }
