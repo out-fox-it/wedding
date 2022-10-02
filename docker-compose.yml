@@ -15,6 +15,14 @@ services:
     healthcheck:
       test: pg_isready -U postgres -h localhost
       interval: 5s
+  adminer:
+    image: adminer:4.8.1
+    container_name: adminer
+    restart: always
+    environment:
+      - ADMINER_DEFAULT_SERVER=database
+    ports:
+      - '8080:8080'
 
 volumes:
   database:
