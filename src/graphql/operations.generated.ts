@@ -18,9 +18,26 @@ export interface Scalars {
   Int: number
   Float: number
   EmailAddress: string
+  NonEmptyString: string
   Password: string
   UUID: string
   Void: null
+}
+
+export interface BaseUser {
+  complete: Scalars['Boolean']
+  email: Scalars['EmailAddress']
+  id: Scalars['UUID']
+}
+
+export type CompleteUser = BaseUser & {
+  __typename?: 'CompleteUser'
+  complete: Scalars['Boolean']
+  email: Scalars['EmailAddress']
+  id: Scalars['UUID']
+  notes?: Maybe<Scalars['String']>
+  parking: Parking
+  playlist: Array<Scalars['NonEmptyString']>
 }
 
 export interface Mutation {
@@ -28,6 +45,7 @@ export interface Mutation {
   login: User
   logout?: Maybe<Scalars['Void']>
   register: User
+  updateProfile: CompleteUser
 }
 
 export interface MutationLoginArgs {
@@ -37,6 +55,25 @@ export interface MutationLoginArgs {
 
 export interface MutationRegisterArgs {
   user: UserInput
+}
+
+export interface MutationUpdateProfileArgs {
+  profile: ProfileInput
+}
+
+export type Parking = 'NO' | 'SLEEPING' | 'YES'
+
+export type PendingUser = BaseUser & {
+  __typename?: 'PendingUser'
+  complete: Scalars['Boolean']
+  email: Scalars['EmailAddress']
+  id: Scalars['UUID']
+}
+
+export interface ProfileInput {
+  notes?: InputMaybe<Scalars['String']>
+  parking: Parking
+  playlist: Array<Scalars['NonEmptyString']>
 }
 
 export interface Query {
@@ -49,11 +86,7 @@ export interface QueryHelloArgs {
   name: Scalars['String']
 }
 
-export interface User {
-  __typename?: 'User'
-  email: Scalars['EmailAddress']
-  id: Scalars['UUID']
-}
+export type User = CompleteUser | PendingUser
 
 export interface UserInput {
   code: Scalars['String']
