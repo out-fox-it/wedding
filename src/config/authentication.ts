@@ -1,13 +1,9 @@
-import { getEnvironmentValue } from './utils'
+import { getEnvironmentValue, getNumericEnvironmentValue } from './utils'
 
 const defaultSaltRounds = 10
 
-const saltRounds = Number(
-  getEnvironmentValue('SALT_ROUNDS', defaultSaltRounds.toString()),
-)
-
 export const authentication = {
-  saltRounds: isNaN(saltRounds) ? defaultSaltRounds : saltRounds,
+  saltRounds: getNumericEnvironmentValue('SALT_ROUNDS', defaultSaltRounds),
   cookieName: getEnvironmentValue('COOKIE_NAME', 'wedding-iron-session'),
   cookiePassword: getEnvironmentValue(
     'COOKIE_PASSWORD',
