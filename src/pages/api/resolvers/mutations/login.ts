@@ -2,6 +2,7 @@ import { compare } from 'bcrypt'
 import { GraphQLYogaError } from '@graphql-yoga/node'
 
 import type { MutationResolvers } from '../resolvers.generated'
+import { toGqlUser } from '../types/user'
 
 export const login: MutationResolvers['login'] = async (
   _,
@@ -10,6 +11,7 @@ export const login: MutationResolvers['login'] = async (
 ) => {
   const user = await prisma.user.findFirst({
     where: { email: { equals: email, mode: 'insensitive' } },
+    include: { profile: true },
   })
 
   if (!user) {
@@ -25,5 +27,5 @@ export const login: MutationResolvers['login'] = async (
   session.user = { id: user.id }
   await session.save()
 
-  return user
+  return toGqlUser(user)
 }

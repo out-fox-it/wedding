@@ -5,6 +5,7 @@ const scalars = {
   EmailAddress: 'string',
   Password: 'string',
   Void: 'null',
+  NonEmptyString: 'string',
 }
 
 /** @type {import("@graphql-codegen/cli").CodegenConfig} */
@@ -40,6 +41,9 @@ module.exports = {
         useIndexSignature: true,
         enumsAsTypes: true,
         contextType: './context#GraphQLContext',
+        fieldContextTypes: [
+          'Mutation.updateProfile#./authorization#UserGraphQLContext',
+        ],
         scalars,
       },
     },

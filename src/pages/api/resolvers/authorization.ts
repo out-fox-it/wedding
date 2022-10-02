@@ -3,6 +3,10 @@ import type { IronSessionData } from 'iron-session'
 
 import type { GraphQLContext } from './context'
 
+export interface UserGraphQLContext extends GraphQLContext {
+  currentUser: { id: string }
+}
+
 export const resolveUserFn: ResolveUserFn<
   Required<IronSessionData>['user'],
   GraphQLContext

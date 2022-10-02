@@ -5,6 +5,7 @@ export const typeDefs = /* GraphQL */ `
   scalar EmailAddress
   scalar Password
   scalar Void
+  scalar NonEmptyString
 
   type Query {
     me: User
@@ -15,6 +16,13 @@ export const typeDefs = /* GraphQL */ `
     register(user: UserInput!): User!
     login(email: EmailAddress!, password: Password!): User!
     logout: Void
+    updateProfile(profile: ProfileInput!): CompleteUser! @auth
+  }
+
+  enum Parking {
+    NO
+    YES
+    SLEEPING
   }
 
   input UserInput {
@@ -23,8 +31,32 @@ export const typeDefs = /* GraphQL */ `
     password: Password!
   }
 
-  type User {
+  input ProfileInput {
+    parking: Parking!
+    playlist: [NonEmptyString!]!
+    notes: String
+  }
+
+  interface BaseUser {
     id: UUID!
     email: EmailAddress!
+    complete: Boolean!
   }
+
+  type PendingUser implements BaseUser {
+    id: UUID!
+    email: EmailAddress!
+    complete: Boolean!
+  }
+
+  type CompleteUser implements BaseUser {
+    id: UUID!
+    email: EmailAddress!
+    complete: Boolean!
+    parking: Parking!
+    playlist: [NonEmptyString!]!
+    notes: String
+  }
+
+  union User = PendingUser | CompleteUser
 `
