@@ -3,3 +3,6 @@ pnpm-lock.yaml
 
 # TypeScript
 tsconfig.json
+
+# Other
+scripts/data/
