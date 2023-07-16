@@ -1,0 +1,11 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "module": "commonjs",	      /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext'. */
+    "isolatedModules": false,     /* Transpile each file as a separate module (similar to 'ts.transpileModule'). */
+    "incremental": false,         /* Save .tsbuildinfo files to allow for incremental compilation of projects. */
+    "lib": ["esnext"]             /* Specify a set of bundled library declaration files that describe the target runtime environment. */
+  },
+  "include": ["**/*.ts"],
+  "exclude": []
+}

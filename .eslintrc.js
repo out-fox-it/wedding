@@ -37,5 +37,22 @@ module.exports = {
         'react/require-default-props': 'off',
       },
     },
+    {
+      files: ['scripts/**/*.ts'],
+      env: { node: true, browser: false },
+      extends: [
+        'eslint:recommended',
+        '@strv/node/v16',
+        '@strv/node/optional',
+        '@strv/typescript',
+        '@strv/typescript/optional',
+      ],
+      parserOptions: {
+        project: 'scripts/tsconfig.json',
+      },
+      rules: {
+        'import/no-unused-modules': ['warn', { unusedExports: true }],
+      },
+    },
   ],
 }
