@@ -44,9 +44,24 @@ dependencies:
   eslint-config-next:
     specifier: ^13.4.10
     version: 13.4.10(eslint@8.45.0)(typescript@5.1.6)
+  fp-ts:
+    specifier: ^2.16.0
+    version: 2.16.0
+  io-ts:
+    specifier: ^2.2.20
+    version: 2.2.20(fp-ts@2.16.0)
+  io-ts-types:
+    specifier: ^0.5.19
+    version: 0.5.19(fp-ts@2.16.0)(io-ts@2.2.20)(monocle-ts@2.3.13)(newtype-ts@0.3.5)
   jsdom:
     specifier: ^22.1.0
     version: 22.1.0
+  monocle-ts:
+    specifier: ^2.3.13
+    version: 2.3.13(fp-ts@2.16.0)
+  newtype-ts:
+    specifier: ^0.3.5
+    version: 0.3.5(fp-ts@2.16.0)(monocle-ts@2.3.13)
   next:
     specifier: ^13.4.10
     version: 13.4.10(@babel/core@7.22.9)(react-dom@18.2.0)(react@18.2.0)
@@ -2208,6 +2223,10 @@ packages:
       fetch-blob: 3.2.0
     dev: false
 
+  /fp-ts@2.16.0:
+    resolution: {integrity: sha512-bLq+KgbiXdTEoT1zcARrWEpa5z6A/8b7PcDW7Gef3NSisQ+VS7ll2Xbf1E+xsgik0rWub/8u0qP/iTTjj+PhxQ==}
+    dev: false
+
   /fraction.js@4.2.0:
     resolution: {integrity: sha512-MhLuK+2gUcnZe8ZHlaaINnQLl0xRIGRfcGk2yl8xoQAfHrSsL3rYu6FCmBdkdbhc9EPlwyGHewaRsvwRMJtAlA==}
     dev: false
@@ -2515,6 +2534,28 @@ packages:
       get-intrinsic: 1.2.1
       has: 1.0.3
       side-channel: 1.0.4
+    dev: false
+
+  /io-ts-types@0.5.19(fp-ts@2.16.0)(io-ts@2.2.20)(monocle-ts@2.3.13)(newtype-ts@0.3.5):
+    resolution: {integrity: sha512-kQOYYDZG5vKre+INIDZbLeDJe+oM+4zLpUkjXyTMyUfoCpjJNyi29ZLkuEAwcPufaYo3yu/BsemZtbdD+NtRfQ==}
+    peerDependencies:
+      fp-ts: ^2.0.0
+      io-ts: ^2.0.0
+      monocle-ts: ^2.0.0
+      newtype-ts: ^0.3.2
+    dependencies:
+      fp-ts: 2.16.0
+      io-ts: 2.2.20(fp-ts@2.16.0)
+      monocle-ts: 2.3.13(fp-ts@2.16.0)
+      newtype-ts: 0.3.5(fp-ts@2.16.0)(monocle-ts@2.3.13)
+    dev: false
+
+  /io-ts@2.2.20(fp-ts@2.16.0):
+    resolution: {integrity: sha512-Rq2BsYmtwS5vVttie4rqrOCIfHCS9TgpRLFpKQCM1wZBBRY9nWVGmEvm2FnDbSE2un1UE39DvFpTR5UL47YDcA==}
+    peerDependencies:
+      fp-ts: ^2.5.0
+    dependencies:
+      fp-ts: 2.16.0
     dev: false
 
   /is-array-buffer@3.0.2:
@@ -2917,6 +2958,14 @@ packages:
     resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
     dev: false
 
+  /monocle-ts@2.3.13(fp-ts@2.16.0):
+    resolution: {integrity: sha512-D5Ygd3oulEoAm3KuGO0eeJIrhFf1jlQIoEVV2DYsZUMz42j4tGxgct97Aq68+F8w4w4geEnwFa8HayTS/7lpKQ==}
+    peerDependencies:
+      fp-ts: ^2.5.0
+    dependencies:
+      fp-ts: 2.16.0
+    dev: false
+
   /ms@2.1.2:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
     dev: false
@@ -2945,6 +2994,16 @@ packages:
 
   /natural-compare@1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
+    dev: false
+
+  /newtype-ts@0.3.5(fp-ts@2.16.0)(monocle-ts@2.3.13):
+    resolution: {integrity: sha512-v83UEQMlVR75yf1OUdoSFssjitxzjZlqBAjiGQ4WJaML8Jdc68LJ+BaSAXUmKY4bNzp7hygkKLYTsDi14PxI2g==}
+    peerDependencies:
+      fp-ts: ^2.0.0
+      monocle-ts: ^2.0.0
+    dependencies:
+      fp-ts: 2.16.0
+      monocle-ts: 2.3.13(fp-ts@2.16.0)
     dev: false
 
   /next@13.4.10(@babel/core@7.22.9)(react-dom@18.2.0)(react@18.2.0):
