@@ -1,4 +1,4 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
+'use strict'
 
-module.exports = nextConfig
+/** @type {import('next').NextConfig} */
+module.exports = {}
