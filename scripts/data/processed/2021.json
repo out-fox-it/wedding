@@ -1,0 +1,3610 @@
+[
+	{
+		"date": "2021-01-07T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": -3.3,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -4.4,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 3.6,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 26,
+					"unit": "cm"
+				},
+				"snow": {
+					"value": 0,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": -3.1,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -4,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 2.7,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 14,
+					"unit": "cm"
+				},
+				"snow": {
+					"value": 0,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": -9.2,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -10.4,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 104.5,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-01-14T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": -3.1,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -6.2,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 46.8,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 6.3,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 52,
+					"unit": "cm"
+				},
+				"sunshine": {
+					"value": 0.1,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": -3.7,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -5.7,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 2.3,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 28,
+					"unit": "cm"
+				},
+				"snow": {
+					"value": 0,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": -8.9,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -10.6,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 104.5,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-01-21T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": 3.4,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -3,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 32.4,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 53,
+					"unit": "cm"
+				},
+				"sunshine": {
+					"value": 1.6,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": 5.1,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 0.1,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 54,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 27,
+					"unit": "cm"
+				},
+				"sunshine": {
+					"value": 5.9,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": -2.4,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -4,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 111.7,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-01-28T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": -1.2,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -7,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 4.2,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 48,
+					"unit": "cm"
+				},
+				"snow": {
+					"value": 0,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": -1.1,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -5.4,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 5.5,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 19,
+					"unit": "cm"
+				},
+				"snow": {
+					"value": 0,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": -5,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -10,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 93.7,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-02-04T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": 3.9,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -0.6,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 39.6,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 16,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 42,
+					"unit": "cm"
+				},
+				"sunshine": {
+					"value": 1.1,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": 3.9,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 0.7,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 57.6,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 6.1,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 12,
+					"unit": "cm"
+				},
+				"sunshine": {
+					"value": 0,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": -0.5,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -3.8,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 151.3,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-02-11T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": -10.4,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -13.1,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 50.4,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 1.2,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 56,
+					"unit": "cm"
+				},
+				"sunshine": {
+					"value": 0,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": -10.5,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -13,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 43.2,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0.2,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 18,
+					"unit": "cm"
+				},
+				"sunshine": {
+					"value": 0.1,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": -7,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -18,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 115.3,
+					"unit": "km/h"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-02-18T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": 5.9,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -1,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 0.1,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 48,
+					"unit": "cm"
+				},
+				"snow": {
+					"value": 1,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": 7.4,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -0.1,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 50.4,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 16,
+					"unit": "cm"
+				},
+				"sunshine": {
+					"value": 2.1,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": -1.7,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -4.4,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 86.5,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-02-25T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": 13.1,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 1.1,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 0,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 35,
+					"unit": "cm"
+				},
+				"snow": {
+					"value": 7.2,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": 13.8,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 7.7,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 0,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 6,
+					"unit": "cm"
+				},
+				"snow": {
+					"value": 8.7,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": 7.3,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 3.4,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 75.6,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-03-04T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": 6.4,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -4.1,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 2,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 18,
+					"unit": "cm"
+				},
+				"snow": {
+					"value": 1.4,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": 4.3,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -1,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 4.6,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "cm"
+				},
+				"snow": {
+					"value": 0,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": 1.2,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -6.8,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 93.7,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-03-11T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": 0.9,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -6.2,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 39.6,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 18.8,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 17,
+					"unit": "cm"
+				},
+				"sunshine": {
+					"value": 0,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": 2.9,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -3.4,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 72,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 5.3,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 0,
+					"unit": "cm"
+				},
+				"sunshine": {
+					"value": 0,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": -1.1,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -9.5,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 133.3,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-03-18T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": 0,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -7.6,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 1.2,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 33,
+					"unit": "cm"
+				},
+				"snow": {
+					"value": 3.4,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": 0.6,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -5.2,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 0.4,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 11,
+					"unit": "cm"
+				},
+				"snow": {
+					"value": 6,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": -7.7,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -9.4,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 61.2,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-03-25T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": 9.7,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -3.9,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 0,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 30,
+					"unit": "cm"
+				},
+				"snow": {
+					"value": 6.4,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": 9.8,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -0.2,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 0,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 6,
+					"unit": "cm"
+				},
+				"snow": {
+					"value": 10.5,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": 1.7,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -3.4,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 61.2,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-04-01T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": 16.2,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 2,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 1.2,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "cm"
+				},
+				"snow": {
+					"value": 3.7,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": 17.6,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 6.8,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 39.6,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 5.6,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": 7.6,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -0.2,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 75.6,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-04-08T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": 0.5,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -6.5,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 28.8,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 4.1,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 10,
+					"unit": "cm"
+				},
+				"sunshine": {
+					"value": 2.2,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": 1.6,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -3.6,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 46.8,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 1.8,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 2,
+					"unit": "cm"
+				},
+				"sunshine": {
+					"value": 2.5,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": -7.4,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -9.9,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 108.1,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-04-15T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": -0.5,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -2.5,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 32.4,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 7.4,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 6,
+					"unit": "cm"
+				},
+				"sunshine": {
+					"value": 0,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": -1.4,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -2.8,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 35.9,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 1.4,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 6,
+					"unit": "cm"
+				},
+				"sunshine": {
+					"value": 0,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": -7.2,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -8.9,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 100.9,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-04-22T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": 7.2,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 0.2,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 39.6,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 1.4,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 0,
+					"unit": "cm"
+				},
+				"sunshine": {
+					"value": 10.6,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": 8,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 0.6,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 44.6,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0.5,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 8.5,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": -1.1,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -8.7,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 90.1,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-04-29T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": 12.1,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 0.4,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 25.2,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0.3,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 0,
+					"unit": "cm"
+				},
+				"sunshine": {
+					"value": 0,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": 15.4,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 6.4,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 64.8,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0.8,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 1.9,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": 3.9,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 0.2,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 104.5,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-05-06T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": 4.9,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -0.3,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 32.4,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 16.2,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 0,
+					"unit": "cm"
+				},
+				"sunshine": {
+					"value": 0.1,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": 9.9,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 0.2,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 46.8,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 7.5,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 0,
+					"unit": "cm"
+				},
+				"sunshine": {
+					"value": 1.6,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": -2.1,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -5.6,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 93.7,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-05-13T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": 14.7,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 7.9,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 28.8,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 1,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 0.8,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": 12.4,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 7.7,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 0.1,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": 6,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 2.8,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 46.8,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-05-20T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": 12.8,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 2.2,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 0,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 3.9,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": 12.4,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 5.2,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 43.2,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0.7,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 5.3,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": 3.7,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -0.2,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 64.8,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-05-27T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": 9.7,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 3.9,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 28.8,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 1.4,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 0.6,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": 12.8,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 5.1,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 39.6,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 1.1,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": 2.5,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -0.6,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 100.9,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-06-03T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": 18.5,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 4.5,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 0,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 6.6,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": 19.1,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 11.5,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 0,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 13,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": 13.3,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 5.2,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-06-10T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": 18.3,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 7.7,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 7.9,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 4,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": 20.6,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 12.6,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 25.2,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 4.9,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 8.5,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": 12.9,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 7.9,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 57.6,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-06-17T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": 25.2,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 10.7,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 32.4,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 12,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": 27.2,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 17,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 0,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 10.3,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": 20.3,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 11.2,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 64.8,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-06-24T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": 20.7,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 12,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 8.3,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 8.3,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": 22.7,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 13.5,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 39.6,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 13.7,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 1,
+					"unit": "cm"
+				},
+				"sunshine": {
+					"value": 5.8,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": 16.6,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 9.2,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 82.9,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-07-01T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": 16.8,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 9.5,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 3,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 1.8,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": 17.9,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 10.8,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 37,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 4.2,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": 9.9,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 6.1,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 61.2,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-07-08T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": 20.1,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 9.7,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 17.5,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 0.7,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": 22.9,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 13.7,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 57.6,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0.8,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 5.5,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": 16,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 9.9,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 68.4,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-07-15T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": 20.9,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 9.7,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 0,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 10.6,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": 21.7,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 12.8,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 0,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 6.5,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": 16,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 10.3,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 28.8,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-07-22T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": 16.8,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 8.9,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 0,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": 20.8,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 13.3,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 36,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 3.9,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": 10.4,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 6.7,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-07-29T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": 19.7,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 10.8,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 43.2,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 4.6,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": 21.4,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 13.1,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 43.2,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 10.3,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": 12.7,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 8.4,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 90.1,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-08-05T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": 13.3,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 9.7,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 7.6,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": 14.7,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 10.3,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 43.2,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 8,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 0,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": 7.8,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 5,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 57.6,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-08-12T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": 20.8,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 7,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 0,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 9.9,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": 22.5,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 14.2,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 0,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 11.8,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": 14.4,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 7.4,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 46.8,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-08-19T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": 15.2,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 11.7,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 0.5,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": 17,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 11.7,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 28.8,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 0.8,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": 8.5,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 5.8,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 79.3,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-08-26T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": 14.8,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 6.8,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 3.6,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 2.5,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": 13.8,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 8.3,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 39.6,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 25,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 2.1,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": 6,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 2.4,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 90.1,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-09-02T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": 17,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 8.7,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 0.2,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 2.9,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": 16.6,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 10,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 0,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 10.4,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": 7.7,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 4.7,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 79.3,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-09-09T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": 20.7,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 5.8,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 0,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 10.3,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": 20.5,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 13.4,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 57.6,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 11.2,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": 13.8,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 6.4,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 100.9,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-09-16T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": 18.6,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 8.8,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 5.3,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 0.7,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": 17.9,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 10.5,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 20.5,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 0.1,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": 12,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 5,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 68.4,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-09-23T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": 14.5,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 4,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 39.6,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0.2,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 5.8,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": 14.7,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 7.4,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 39.6,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 1.9,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": 8.1,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 2.1,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 129.7,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-09-30T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": 10.9,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 0.7,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 39.6,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0.1,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 5.1,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": 12,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 5.7,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 0.1,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 8.1,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": 4.1,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -0.8,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 82.9,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-10-07T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": 12.6,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 5.8,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 32.4,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0.1,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 2.4,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": 10.4,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 6.9,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 39.6,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0.1,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 1.4,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": 4.7,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 0.8,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 64.8,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-10-14T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": 5.7,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -1.6,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 3,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": 5.9,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 0,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 4.8,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": 1.2,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -4.9,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 79.3,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-10-21T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": 10.8,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 3,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 54,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 12.5,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 0.3,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": 11.8,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 4.7,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 79.3,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 2.2,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 0,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": 4.9,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -3,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 144.1,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-10-28T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": 14.1,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -0.1,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 0,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 6.4,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": 12.7,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 5.6,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 64.8,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 8.1,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": 7.7,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 1.1,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 111.7,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-11-04T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": 8.6,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 2.4,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 61.2,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 58.9,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 0,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": 9,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 3.2,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 75.6,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 4.7,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 0,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": 3.5,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -2.4,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 154.9,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-11-11T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": 5.3,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -1.9,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 0,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 1.9,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": 2.6,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 0.3,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 43.2,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 0,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": 7,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 1.5,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 57.6,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-11-18T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": 4,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 1.1,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 3.5,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 0.1,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": 3.2,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 1.1,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 4.2,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": 0.8,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -4,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 108.1,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-11-25T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": -1.2,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -4.3,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 0.2,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "cm"
+				},
+				"snow": {
+					"value": 0,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": -0.8,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -3.1,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 68.4,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 0,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": 0.1,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -8.6,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 111.7,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-12-02T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": 2.1,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -5.3,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 32.4,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0.6,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 26,
+					"unit": "cm"
+				},
+				"sunshine": {
+					"value": 0.9,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": 2.8,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -4.2,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 43.2,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0.7,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 10,
+					"unit": "cm"
+				},
+				"sunshine": {
+					"value": 1,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": -3.5,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -11.8,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 151.3,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-12-09T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": -2.8,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -3.7,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 7.6,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 28,
+					"unit": "cm"
+				},
+				"snow": {
+					"value": 0,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": -1.9,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -3.2,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 50.4,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 7.1,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 15,
+					"unit": "cm"
+				},
+				"sunshine": {
+					"value": 0,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": -7.1,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -9,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 108.1,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-12-16T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": 5.6,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -0.8,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 0.4,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 20,
+					"unit": "cm"
+				},
+				"snow": {
+					"value": 0,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": 3.1,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 0.4,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 0.2,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 6,
+					"unit": "cm"
+				},
+				"snow": {
+					"value": 0,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": -0.1,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -5.8,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 108.1,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-12-23T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": -2,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -11.2,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 25.2,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 2.3,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 22,
+					"unit": "cm"
+				},
+				"sunshine": {
+					"value": 0,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": -2,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -8.1,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 54,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 1.9,
+					"unit": "mm"
+				},
+				"snow": {
+					"value": 8,
+					"unit": "cm"
+				},
+				"sunshine": {
+					"value": 0,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": -3.4,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -13.6,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 144.1,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	},
+	{
+		"date": "2021-12-30T00:00:00.000Z",
+		"stations": [
+			{
+				"name": "Pec pod Snežkou",
+				"maxTemperature": {
+					"value": 8.2,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 0.4,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 4.4,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 23,
+					"unit": "cm"
+				},
+				"snow": {
+					"value": 0,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Polom",
+				"maxTemperature": {
+					"value": 7,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": 1.1,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 5.3,
+					"unit": "mm"
+				},
+				"rain": {
+					"value": 5,
+					"unit": "cm"
+				},
+				"snow": {
+					"value": 0,
+					"unit": "hod"
+				}
+			},
+			{
+				"name": "Sněžka",
+				"maxTemperature": {
+					"value": 3.5,
+					"unit": "°C"
+				},
+				"minTemperature": {
+					"value": -2.5,
+					"unit": "°C"
+				},
+				"wind": {
+					"value": 122.5,
+					"unit": "km/h"
+				},
+				"rain": {
+					"value": 0,
+					"unit": "mm"
+				}
+			}
+		]
+	}
+]
