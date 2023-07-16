@@ -1,7 +1,14 @@
 {
   "name": "wedding",
   "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/out-fox-it/wedding"
+  },
   "private": true,
+  "engines": {
+    "node": "^18"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
