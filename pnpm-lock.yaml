@@ -65,6 +65,9 @@ dependencies:
   next:
     specifier: ^13.4.12
     version: 13.4.12(@babel/core@7.22.9)(react-dom@18.2.0)(react@18.2.0)
+  next-international:
+    specifier: ^0.9.3
+    version: 0.9.3
   node-fetch:
     specifier: ^3.3.1
     version: 3.3.1
@@ -2536,6 +2539,10 @@ packages:
       side-channel: 1.0.4
     dev: false
 
+  /international-types@0.8.0:
+    resolution: {integrity: sha512-cJwagIBzMG0FTK81TABeSBU0eReIXWmvW18m/URn8ZA+GLoWIcdL43kfjArwHVmZJ1n+IFchsBj8tQLYUqmwnA==}
+    dev: false
+
   /io-ts-types@0.5.19(fp-ts@2.16.0)(io-ts@2.2.20)(monocle-ts@2.3.13)(newtype-ts@0.3.5):
     resolution: {integrity: sha512-kQOYYDZG5vKre+INIDZbLeDJe+oM+4zLpUkjXyTMyUfoCpjJNyi29ZLkuEAwcPufaYo3yu/BsemZtbdD+NtRfQ==}
     peerDependencies:
@@ -3004,6 +3011,14 @@ packages:
     dependencies:
       fp-ts: 2.16.0
       monocle-ts: 2.3.13(fp-ts@2.16.0)
+    dev: false
+
+  /next-international@0.9.3:
+    resolution: {integrity: sha512-iriIoo75bmAMd3Oe7F11c/Srz031nDKlrtbVAYWH6XGH0vIWjjOZnDF1i1vG4U6/UZlr0smGnO7+qefHYjRJxQ==}
+    dependencies:
+      client-only: 0.0.1
+      international-types: 0.8.0
+      server-only: 0.0.1
     dev: false
 
   /next@13.4.12(@babel/core@7.22.9)(react-dom@18.2.0)(react@18.2.0):
@@ -3623,6 +3638,10 @@ packages:
     hasBin: true
     dependencies:
       lru-cache: 6.0.0
+    dev: false
+
+  /server-only@0.0.1:
+    resolution: {integrity: sha512-qepMx2JxAa5jjfzxG79yPPq+8BuFToHd1hm7kI+Z4zAq1ftQiP7HcxMhDDItrbtwVeLg/cY2JnKnrcFkmiswNA==}
     dev: false
 
   /shebang-command@1.2.0:
