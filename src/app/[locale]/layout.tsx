@@ -1,11 +1,14 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Oxygen } from 'next/font/google'
 
 import { getCurrentLocale, getStaticParams } from '~/locales/server'
 
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+const oxygen = Oxygen({
+  weight: ['400', '700'],
+  subsets: ['latin'],
+})
 
 export const metadata: Metadata = {
   title: 'WeddinG',
@@ -24,7 +27,7 @@ export default function RootLayout({
 
   return (
     <html lang={locale}>
-      <body className={inter.className}>{children}</body>
+      <body className={`${oxygen.className} antialiased`}>{children}</body>
     </html>
   )
 }
