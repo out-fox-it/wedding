@@ -1,7 +1,7 @@
 export const defaultLocale = 'en'
 export const supportedLocales = [defaultLocale, 'cs'] as const
 
-type Locale = (typeof supportedLocales)[number]
+export type Locale = (typeof supportedLocales)[number]
 type Locales = Record<Locale, unknown>
 
 export const locales = {

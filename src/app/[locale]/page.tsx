@@ -1,11 +1,15 @@
 import { getI18n, getScopedI18n } from '~/locales/server'
 
+import LocaleSwitcher from './locale-switcher'
+
 export default async function Home() {
   const t = await getI18n()
   const scopedT = await getScopedI18n('Home')
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-around p-24">
+      <LocaleSwitcher />
+
       <h1 className="text-9xl">{t('Home.title')}</h1>
       <h1 className="text-9xl">{scopedT('title')}</h1>
 
