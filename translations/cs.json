@@ -1,5 +1,8 @@
 {
-  "Home": {
-    "title": "Ahoj světe!"
+  "title": "WeddinG",
+  "Header": {
+    "address": "Místo konání",
+    "where": "Kde?",
+    "announcement": "Vzali jsme se!"
   }
 }

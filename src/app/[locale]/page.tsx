@@ -1,87 +1,33 @@
-import { getI18n, getScopedI18n } from '~/locales/server'
+import { getI18n } from '~/locales/server'
 
-import LocaleSwitcher from './locale-switcher'
+import Header from './header'
+import icon from './icon.svg'
 
 export default async function Home() {
   const t = await getI18n()
-  const scopedT = await getScopedI18n('Home')
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-around p-24">
-      <LocaleSwitcher />
-
-      <h1 className="text-9xl">{t('Home.title')}</h1>
-      <h1 className="text-9xl">{scopedT('title')}</h1>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+    <main className="min-h-screen">
+      {/* eslint-disable-next-line @typescript-eslint/no-unsafe-assignment */}
+      <Header title={t('title')} icon={icon} />
+      <section className="m-auto w-2/3">
+        <h2 className="my-8 text-center text-3xl font-bold">TODO</h2>
+        <p className="p-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A minus, nam
+          dolor doloremque quos, possimus eaque odio non saepe impedit vero esse
+          beatae nisi vitae veritatis eum dolores quaerat eos. Illo molestiae ut
+          ipsa, sit accusamus numquam. Libero repellat architecto praesentium
+          quisquam delectus pariatur vitae sequi minima mollitia? Optio, omnis?
+          Autem molestias maxime corrupti eius illum labore tempora consectetur
+          quisquam. Aliquid totam quidem a, iure in nihil pariatur voluptatem
+          aspernatur atque tempore nostrum vitae sapiente unde dolores
+          voluptatibus autem ea suscipit porro fuga architecto voluptate esse!
+          Minima, quasi ipsum. Culpa.
+        </p>
+      </section>
+      <footer className="my-8 text-center text-5xl font-bold before:pr-2 before:content-['</'] after:pl-2 after:content-['>']">
+        {t('title')}
+      </footer>
     </main>
   )
 }
