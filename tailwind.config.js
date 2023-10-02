@@ -6,7 +6,11 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        'spin-slow': 'spin 5s linear infinite;',
+        'spin-slow': 'spin 5s linear infinite',
+      },
+      backgroundImage: {
+        'gradient-stripe':
+          'repeating-linear-gradient(-45deg, var(--tw-gradient-from), var(--tw-gradient-from) 2rem, var(--tw-gradient-to) 2rem, var(--tw-gradient-to) 4rem)',
       },
     },
   },

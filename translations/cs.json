@@ -3,6 +3,9 @@
   "Header": {
     "address": "Místo konání",
     "where": "Kde?",
-    "announcement": "Vzali jsme se!"
+    "announcement": "Vzali jsme se!",
+    "gallery": "Galerie",
+    "photos": "Fotky",
+    "video": "Video"
   }
 }

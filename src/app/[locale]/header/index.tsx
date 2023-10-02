@@ -4,6 +4,7 @@ import { getScopedI18n } from '~/locales/server'
 
 import Address from './components/address'
 import BackgroundImage from './components/background-image'
+import ButtonLink from './components/button-link'
 import HeaderBox from './components/header-box'
 import LocaleSwitcher from './components/locale-switcher'
 import WeddingDate from './components/wedding-date'
@@ -46,8 +47,19 @@ export default async function Header({ title, icon }: Props) {
         >
           <WeddingDate className="whitespace-nowrap text-4xl text-accent" />
         </HeaderBox>
-        <HeaderBox legend="???" header="???" className="z-10 border-secondary">
-          <p>TODO</p>
+        <HeaderBox legend={t('gallery')} className="z-10 border-secondary">
+          <ButtonLink
+            className="hover:btn-secondary"
+            link="https://photos.app.goo.gl/JvktZ1mk5HJQtUnX7"
+          >
+            {t('photos')}
+          </ButtonLink>
+          <ButtonLink
+            className="from-primary to-secondary hover:border-none hover:bg-gradient-stripe"
+            link="https://youtu.be/vbqAoUjFLg4"
+          >
+            {t('video')}
+          </ButtonLink>
         </HeaderBox>
       </section>
       <section className="col-[1] max-lg:pt-16 lg:row-start-3 lg:row-end-6">

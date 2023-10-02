@@ -3,6 +3,9 @@
   "Header": {
     "address": "Address",
     "where": "Where?",
-    "announcement": "We got married!"
+    "announcement": "We got married!",
+    "gallery": "Gallery",
+    "photos": "Photos",
+    "video": "Video"
   }
 }
