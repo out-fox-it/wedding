@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react'
 import type { Metadata } from 'next'
 import { Oxygen } from 'next/font/google'
 
@@ -27,7 +28,10 @@ export default function RootLayout({
 
   return (
     <html lang={locale}>
-      <body className={`${oxygen.className} antialiased`}>{children}</body>
+      <body className={`${oxygen.className} antialiased`}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   )
 }
